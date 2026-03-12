@@ -1,0 +1,3336 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="fr" class="ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="fr"  > <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+      <meta name="csrf_field_name" content="_csrf_token" />
+      <meta name="_csrf_token" content="IjY1MGE1YzNkY2VlMmU3ZGQwMGE0NGI1M2EzZTEwN2QzNDBmMDgyZDki.abG4iA.PPgURI6062U7YcgzME1KgcQjVYk" />
+
+      <meta name="generator" content="ckan 2.11.3" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapports d&#39;accident - Jeu de données - Données Québec</title>
+
+    
+    
+
+    <link rel="shortcut icon" href="/recherche/images/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  
+  
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js" id="jquery-core-js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-3.4.1.min.js" id="jquery-migrate-js"></script>
+  <link rel="stylesheet" id="cookie-notice-front-css" href="https://beta.donneesquebec.ca/wp-content/plugins/cookie-notice/css/front.min.css?ver=2.4.18" type="text/css" media="all">
+ 
+  <script type="text/javascript" id="cookie-notice-front-js-before">
+    
+    function generateNonce(length) {
+      var text = "";
+      var possible = "abcdefghijklmnopqrstuvwxyz0123456789";
+      for(var i = 0; i < length; i++) {
+          text += possible.charAt(Math.floor(Math.random() * possible.length));
+      }
+      return '"'+text+'"';
+    }
+
+    /* <![CDATA[ */
+    //var cnArgs = {"ajaxUrl":"https:\/\/beta.donneesquebec.ca\/wp-admin\/admin-ajax.php","hideEffect":"fade","position":"bottom","onScroll":false,"onScrollOffset":100,"onClick":false,"cookieName":"cookie_notice_accepted","cookieTime":2592000,"cookieTimeRejected":2592000,"globalCookie":false,"redirection":false,"cache":true,"revokeCookies":false,"revokeCookiesOpt":"automatic"};
+    //cnArgs.nonce = myNonce;    
+   /* ]]> */
+   const cnArgs = new Object();
+   cnArgs.ajaxUrl="https:\/\/beta.donneesquebec.ca\/wp-admin\/admin-ajax.php";
+   cnArgs.nonce = generateNonce(10);
+   cnArgs.hideEffect="fade";
+   cnArgs.position="bottom";
+   cnArgs.onScroll=false;
+   cnArgs.onScrollOffset=100;
+   cnArgs.onClick=false;
+   cnArgs.cookieName="cookie_notice_accepted";
+   cnArgs.cookieTime=2592000;
+   cnArgs.cookieTimeRejected=2592000;
+   cnArgs.globalCookie=false;
+   cnArgs.redirection=false;
+   cnArgs.cache=true;
+   cnArgs.revokeCookies=false;
+   cnArgs.revokeCookiesOpt="automatic";
+  </script>
+  <script type="text/javascript" src="https://beta.donneesquebec.ca/wp-content/plugins/cookie-notice/js/front.min.js?ver=2.4.18" id="cookie-notice-front-js"></script>
+  
+  
+
+
+    
+      
+          <link rel="alternate" type="text/n3" href="https://www.donneesquebec.ca/recherche/dataset_series/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a.n3"/>
+          <link rel="alternate" type="text/turtle" href="https://www.donneesquebec.ca/recherche/dataset_series/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a.ttl"/>
+          <link rel="alternate" type="application/rdf+xml" href="https://www.donneesquebec.ca/recherche/dataset_series/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a.xml"/>
+          <link rel="alternate" type="application/ld+json" href="https://www.donneesquebec.ca/recherche/dataset_series/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a.jsonld"/>
+      
+    
+
+  
+    
+    
+  
+  
+  
+    
+      
+      
+      
+    
+    
+    
+
+  
+
+   
+
+  
+
+    
+     
+
+     
+
+  
+
+
+    
+    <link href="/recherche/webassets/base/51d427fe_main.css" rel="stylesheet"/>
+<link href="/recherche/webassets/ckanext-geoview/f197a782_geo-resource-styles.css" rel="stylesheet"/>
+<link href="/recherche/webassets/ckanext-activity/8dd77216_activity.css" rel="stylesheet"/>
+<link href="/recherche/webassets/vendor/f3b8236b_select2.css" rel="stylesheet"/>
+<link href="/recherche/webassets/vendor/53df638c_fontawesome.css" rel="stylesheet"/>
+<link href="/recherche/webassets/showcase/3e403bb0_ckanext_showcase.css" rel="stylesheet"/>
+<link href="/recherche/webassets/dqc_showcase/00ab1be7_dqc_showcase_css.css" rel="stylesheet"/>
+<link href="/recherche/webassets/ckanext-scheming/728ec589_scheming_css.css" rel="stylesheet"/>
+<link href="/recherche/webassets/dqc_scheming/8db089b6_dqc_scheming_css.css" rel="stylesheet"/>
+<link href="/recherche/webassets/ckanext-hierarchy/1c5c8fe1_hierarchy.css" rel="stylesheet"/>
+<link href="/recherche/webassets/dqc_hierarchy/2131ea14_dqc_hierarchy_css.css" rel="stylesheet"/>
+<link href="/recherche/webassets/dqc_theme/2f29b38a_dqc_theme_css.css" rel="stylesheet"/>
+    
+    
+  
+  <meta property="og:title" content="Rapports d&#39;accident - Données Québec">
+  <meta property="og:description" content="Données issues des rapports d’accident remplis par les policiers, incluant notamment le moment, la gravité de l’accident de même que le type des véhicules impliqués. Les données ont été révisées...">
+
+
+  </head>
+
+  
+  <body data-site-root="https://www.donneesquebec.ca/recherche/" data-locale-root="https://www.donneesquebec.ca/recherche/" >
+
+    
+    <div class="visually-hidden-focusable"><a href="#content">Skip to main content</a></div>
+  
+
+  
+    
+
+
+  
+  
+    
+  
+
+  <div class="contenu-fluide piv">
+    <div class="contenu-fixe">
+      <div class="row">
+        <div class="col-4 d-flex align-items-center"><a href="#field-giant-search" class="visuallyHidden passerContenu" tabindex="1">Passer au contenu</a></div>
+      </div>
+      <div class="ligne" id="entetePiv">
+        <div class="d-flex align-items-center zone1">
+          <a tabindex="5" href="/"><img id="pivImage" alt="quebec logo" src="/recherche/images/QUEBEC_blanc.svg" width="256" height="72"></a>
+        </div> <!-- zone1 -->
+        <div class="d-flex align-items-center zone2">
+          <div class="identite desktop">Partenariat Données Québec</div>
+        </div> <!-- zone2 -->
+        <div class="d-flex justify-content-end align-items-center zone3">
+          <div class="zoneMenu">
+            <div class="toggle_btn"><span></span></div>
+            <div class="menu_mobile nav">
+              <div class="menu_mobile--site mobile">
+                <li><a href="/recherche/dataset/">JEUX DE DONNÉES</a></li><li><a href="/recherche/organization/">ORGANISATIONS</a></li><li><a href="/recherche/showcase">APPLICATIONS</a></li>
+                <li><a title="CARTE INTERACTIVE" target="_blank" href="https://www.carte-igo.donneesquebec.ca/">CARTE INTERACTIVE</a></li>
+                <li><a title="GUIDES ET INFORMATIONS" href="#" data-bs-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">GUIDES ET INFORMATIONS</a></li>
+                <li><a title="EXPLORER les données" href="/explorer">EXPLORER les données</a></li>
+                <li><a title="EXPLOITER les données" href="/exploiter">EXPLOITER les données</a></li>
+                <li><a title="DIFFUSER des données" href="/diffusion">DIFFUSER des données</a></li>
+              </div>
+              <div class="menu_mobile--piv"><a href="/nous-joindre-renseignements-generaux" tabindex="25">Nous joindre</a></div>
+            </div>
+          </div> <!-- zoneMenu -->
+        </div> <!-- zone3 -->
+      </div> <!-- entetePiv -->
+      <div class="row" id="entetePiv--titreMobile">
+        <div class="titreM mobile"><p>Partenariat Données Québec</p></div>
+      </div>
+    </div> <!-- contenu-fixe -->
+  </div> <!-- contenu fluide -->
+  <div id="siteMenu">
+    <div class="contenu-fluide">
+      <div class="contenu-fixe">
+        <div id="entetePiv">
+          <div class="d-flex align-items-center">
+            <nav class="collapse navbar-collapse navbar-right" role="navigation">
+              <div id="navbar-collapsed" class="menu-menu-principal-francais-container">
+                <ul id="menu-menu-principal-francais-1" class="nav navbar-nav dosis-reg">
+                  <li id="menu-item-336" class="menu-principal-donnees menu-item menu-item-type-custom menu-item-object-custom menu-item-336">
+   	            <a title="JEUX DE DONNÉES" href="/recherche/dataset?sort=metadata_created+desc">JEUX DE DONNÉES</a>
+                  </li>
+                  <li class="menu-principal-organisations menu-item menu-item-type-custom menu-item-object-custom menu-item-484">
+	            <a title="ORGANISATIONS" href="/recherche/organization">ORGANISATIONS</a>
+                  </li>
+                  <li class="menu-principal-applications menu-item menu-item-type-custom menu-item-object-custom menu-item-463">
+	            <a title="APPLICATIONS" href="/recherche/applications/">APPLICATIONS</a>
+                  </li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135553">
+                    <a title="CARTE INTERACTIVE" target="_blank" href="https://www.carte-igo.donneesquebec.ca/">CARTE INTERACTIVE</a>
+                  </li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-135449 dropdown">
+                    <a title="GUIDES ET INFORMATIONS" href="#" data-bs-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">GUIDES ET INFORMATIONS
+                      <span class="caret"></span>
+                    </a>
+                    <ul role="menu" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135450">
+                        <a class="dropdown-item" title="EXPLORER les donn&eacute;es" href="/explorer"><span>EXPLORER les donn&eacute;es</span></a>
+                      </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135451">
+                        <a class="dropdown-item" title="EXPLOITER les donn&eacute;es" href="/exploiter"><span>EXPLOITER les donn&eacute;es</span></a>
+                      </li>
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-135552">
+                        <a class="dropdown-item" title="DIFFUSER des donn&eacute;es" href="/diffusion"><span>DIFFUSER des donn&eacute;es</span></a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+	  <form action="/recherche/dataset" id="dqc-search-form-header" method="get" data-module="select-switch">
+            <div id="dqc-search-header" class="input-group search-input-group">
+	      <input type="hidden" name="organization" value="">
+              <input aria-label="Rechercher des jeux de donn&eacute;es" id="field-giant-search" type="text" class="form-control input-lg" name="q" value="" autocomplete="off" placeholder="Rechercher des jeux de donn&eacute;es">
+              <span class="input-group-btn">
+                <button class="btn btn-default btn-lg dqc-btn-search" type="submit" value="search" aria-label="Rechercher">
+                  <span class="fa fa-search"></span>
+                </button>
+              </span>
+            </div>
+	  </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+
+  
+    <div class="main">
+      <div id="content" class="container">
+        
+          
+            <div class="flash-messages">
+              
+                
+              
+            </div>
+          
+
+          
+            <div class="toolbar" role="navigation" aria-label="Breadcrumb">
+              
+                
+                  <ol class="breadcrumb">
+                    
+
+<li class="home"><a href="/" title="Accueil">Accueil</a></li>
+                    
+  
+    
+    
+      
+      <li><a href="/recherche/organization/">Organisations</a></li>
+      
+      
+        <li><a href="/recherche/dataset?q=&extras_organisation_principale=gouvernement-du-quebec">Gouvernement du Québec</a></li>
+      
+      
+        <li><a href="/recherche/organization/saaq">Société de l'assurance...</a></li>
+      
+    
+    <li class="active"><a href="/recherche/dataset/rapports-d-accident">Rapports d'accident</a></li>
+  
+
+                  </ol>
+                
+              
+            </div>
+          
+
+          <div class="row wrapper">
+            
+            
+  
+  
+  
+
+
+            
+              <aside class="secondary col-md-3">
+                
+                
+
+  
+
+  
+  
+  
+
+  
+    
+      
+      
+
+
+
+
+
+  <section id="organization-info" class="module module-narrow">
+    <div class="module context-info">
+    <div class="module-content">
+      
+      
+    
+    <div>
+        <h2 class="module-heading"><i class="fa fa-building"></i> Organisation</h2>
+        <p>&nbsp;</p>
+    </div>
+    
+    <div class="image">
+        <a href="/recherche/organization/saaq">
+            <img src="https://www.donneesquebec.ca/recherche/uploads/group/2016-02-12-192515.584501SAAQw2.gif" width="200" alt="saaq" />
+        </a>
+    </div>
+
+      
+
+      
+  <hr class="dqc-hierarchy-nav-hr">
+  
+    
+    <p class="dqc-hierarchy-nav-item">
+      <a href="/recherche/dataset?q=&extras_organisation_principale=gouvernement-du-quebec"><i class="fa fa-arrow-circle-left"></i> Tous les jeux de données pour Gouvernement du Québec</a>
+    </p>
+  
+
+      
+      
+      </div>
+    </div>
+  </section>
+  
+    
+  
+
+  
+    
+
+  <section class="module module-narrow social">
+    
+      <h2 class="module-heading"><i class="fa fa-share-alt-square"></i> Partager</h2>
+    
+    
+      <ul class="nav nav-simple dqc-nav-social">
+        <li class="nav-item"><a href="https://twitter.com/share?url=https://www.donneesquebec.ca/recherche/dataset/rapports-d-accident" target="_blank"><i class="fa-brands fa-square-x-twitter"></i> (X- Twitter)</a></li>
+        <li class="nav-item"><a href="https://www.facebook.com/sharer.php?u=https://www.donneesquebec.ca/recherche/dataset/rapports-d-accident" target="_blank"><i class="fa-brands fa-facebook-square"></i> Facebook</a></li>
+        <li class="nav-item"><a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.donneesquebec.ca/recherche/dataset/rapports-d-accident&title=shared from Données Québec" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a></li>
+      </ul>
+    
+  </section>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+
+
+<div class="dqc-facet-spacer"></div>
+<section class="module module-narrow module-shallow">
+  <h2 class="module-heading"><i class="fa fa-info-circle"></i>Responsabilité</h2>
+  <div class="module-content dqc-facet-item">
+    <p>
+        Les diffuseurs ne peuvent garantir l'exactitude, la précision ou l'intégralité des données mises à votre disposition sur ce site.
+        <a href="/licence/#responsabilite" class="fa fa-arrow-circle-right" style="color: black;" title="Responsabilité"></a>
+    </p>
+  </div>
+</section>
+
+
+
+              </aside>
+            
+
+            
+              <div class="primary col-md-9 col-xs-12" role="main">
+                
+                
+                  <article class="module">
+                    
+                      <header class="module-content page-header">
+                        
+                        <ul class="nav nav-tabs">
+                          
+  <li class="active"><a href="/recherche/dataset/rapports-d-accident"><i class="fa fa-sitemap"></i> Jeu de données</a></li>
+  <li><a href="/recherche/dataset/groups/rapports-d-accident"><i class="fa fa-users"></i> Catégories</a></li>
+  <li><a href="/recherche/dataset/showcases/rapports-d-accident"><i class="fa fa-trophy"></i> Applications</a></li>
+
+                        </ul>
+                      </header>
+                    
+                    <div class="module-content">
+                      
+                      
+  
+                      
+  
+  
+  <h1>
+    
+      Rapports d&#39;accident
+     
+      
+    
+  </h1>
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <div class="notes embedded-content dqc-truncate-to-700">
+      <p>Données issues des rapports d’accident remplis par les policiers, incluant notamment le moment, la gravité de l’accident de même que le type des véhicules impliqués.</p>
+<p>Les données ont été révisées pour respecter les nouvelles dispositions de la loi 25 protégeant la vie privée des Québécois.</p>
+    </div>
+  
+
+  
+  <span class="insert-comment-thread"></span>
+
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function(){
+      gtag('event', 'vue-package', {
+        'event_category': 'Société de l\'assurance automobile du Québec (SAAQ)',
+        'event_label': 'rapports-d-accident - packid : 8dd0ab9b-d45d-4526-9256-c598fbc4ff3a',
+        'event_org_principale': 'gouvernement-du-quebec'
+      });
+    });
+  </script>
+
+
+
+  
+    
+
+
+<section id="dataset-resources" class="resources">
+  <h3>Données et ressources (13)</h3>
+  
+    
+      <ul class="resource-list">
+        
+          
+          
+          
+          
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          
+            
+              
+            
+              
+                
+                  
+                  
+                
+              
+            
+              
+                
+                  
+                  
+                
+              
+            
+              
+                
+                  
+                  
+                
+              
+            
+              
+                
+                  
+                  
+                
+              
+            
+              
+                
+                  
+                  
+                
+              
+            
+              
+                
+                  
+                  
+                
+              
+            
+              
+                
+                  
+                  
+                
+              
+            
+              
+                
+                  
+                  
+                
+              
+            
+              
+                
+                  
+                  
+                
+              
+            
+              
+                
+                  
+                  
+                
+              
+            
+              
+                
+                  
+                  
+                
+              
+            
+              
+                
+                  
+                  
+                
+              
+            
+          
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          
+            
+              
+                
+                  
+                  
+                
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          
+          
+
+  	    
+	    
+
+            
+            
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+            
+
+	    
+
+          
+
+  	    
+	    
+
+            
+            
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+            
+
+	    
+
+          
+
+  	    
+	    
+
+            
+              <h4 class="dqc-scheming-sub-header">Données</h4>
+            
+            
+              
+                
+              
+                
+ 		  
+		  
+                  
+
+
+
+
+<div class="dqc-scheming-resource-item " data-loop-index="2" data-loop-indexori="2" data-display="donnees">
+  <li class="resource-item" data-id="be702e5c-a25e-421e-b00d-0360c73525f1">
+    
+  <a class="heading" 
+     href="/recherche/dataset/rapports-d-accident/resource/be702e5c-a25e-421e-b00d-0360c73525f1" 
+     title="Rapports d&#39;accident, 2022"
+     onClick="
+        gtag('event', 'vue', {
+          'event_category': 'Société de l\'assurance automobile du Québec (SAAQ)',
+          'event_label': 'rapports-d-accident - resid : be702e5c-a25e-421e-b00d-0360c73525f1 - CSV',
+          'event_org_principale': 'gouvernement-du-quebec'
+        });
+	">
+    Rapports d&#39;accident, 2022<span class="label label-default dqc-label" property="dc:format" data-format="csv">CSV</span>
+    
+  </a>
+  <span class="description">(20 Mo)</span>
+  
+  
+  <p class="description">
+    <b>Dernière modification :</b>
+    
+    2023-12-18
+  </p>
+  
+
+    
+  <p class="description">
+    
+  </p>
+
+    
+      
+      <div class="dropdown btn-group">
+        <a href="#" class="btn btn-primary dropdown-toggle" type="button" id="dropdownExplorer" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa fa-share"></i>
+          Explorer
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownExplorer">
+          
+  <li>
+     <a href="/recherche/dataset/rapports-d-accident/resource/be702e5c-a25e-421e-b00d-0360c73525f1"
+           class="resource-url-analytics"
+           target="_blank"
+           onClick='
+           gtag('event', 'vue', {
+            'event_category': 'Société de l\'assurance automobile du Québec (SAAQ)',
+            'event_label': 'rapports-d-accident - resid : be702e5c-a25e-421e-b00d-0360c73525f1 - CSV',
+            'event_org_principale': 'gouvernement-du-quebec'
+            });
+	   '>
+      
+        <i class="fa fa-info-circle"></i>
+        Plus d'information
+      
+    </a>
+  </li>
+  
+    <li>
+      
+      
+        <a href="#"
+           class="dqc-download resource-url-analytics"
+           target="_blank"
+	   data-org-principale="gouvernement-du-quebec"
+	   data-org="Société de l\'assurance automobile du Québec (SAAQ)"
+	   data-org-name="saaq"
+	   data-org-pack="rapports-d-accident"
+	   data-desc="rapports-d-accident - resid : be702e5c-a25e-421e-b00d-0360c73525f1 - CSV"
+	   data-lien="https://dq-prd-bucket1.s3.ca-central-1.amazonaws.com/saaq/Rapport_Accident_2022.csv">
+          <i class="fa fa-arrow-circle-down"></i>	  
+          Télécharger
+        </a>
+      
+      
+    </li>
+  
+  
+
+        </ul>
+      </div>
+      
+    
+  </li>
+</div>
+                
+              
+                
+ 		  
+		  
+                  
+
+
+
+
+<div class="dqc-scheming-resource-item " data-loop-index="3" data-loop-indexori="3" data-display="donnees">
+  <li class="resource-item" data-id="ada44698-f402-49aa-8524-26d224e61b49">
+    
+  <a class="heading" 
+     href="/recherche/dataset/rapports-d-accident/resource/ada44698-f402-49aa-8524-26d224e61b49" 
+     title="Rapports d&#39;accident, 2021"
+     onClick="
+        gtag('event', 'vue', {
+          'event_category': 'Société de l\'assurance automobile du Québec (SAAQ)',
+          'event_label': 'rapports-d-accident - resid : ada44698-f402-49aa-8524-26d224e61b49 - CSV',
+          'event_org_principale': 'gouvernement-du-quebec'
+        });
+	">
+    Rapports d&#39;accident, 2021<span class="label label-default dqc-label" property="dc:format" data-format="csv">CSV</span>
+    
+  </a>
+  <span class="description">(18 Mo)</span>
+  
+  
+  <p class="description">
+    <b>Dernière modification :</b>
+    
+    2022-08-25
+  </p>
+  
+
+    
+  <p class="description">
+    
+  </p>
+
+    
+      
+      <div class="dropdown btn-group">
+        <a href="#" class="btn btn-primary dropdown-toggle" type="button" id="dropdownExplorer" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa fa-share"></i>
+          Explorer
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownExplorer">
+          
+  <li>
+     <a href="/recherche/dataset/rapports-d-accident/resource/ada44698-f402-49aa-8524-26d224e61b49"
+           class="resource-url-analytics"
+           target="_blank"
+           onClick='
+           gtag('event', 'vue', {
+            'event_category': 'Société de l\'assurance automobile du Québec (SAAQ)',
+            'event_label': 'rapports-d-accident - resid : ada44698-f402-49aa-8524-26d224e61b49 - CSV',
+            'event_org_principale': 'gouvernement-du-quebec'
+            });
+	   '>
+      
+        <i class="fa fa-info-circle"></i>
+        Plus d'information
+      
+    </a>
+  </li>
+  
+    <li>
+      
+      
+        <a href="#"
+           class="dqc-download resource-url-analytics"
+           target="_blank"
+	   data-org-principale="gouvernement-du-quebec"
+	   data-org="Société de l\'assurance automobile du Québec (SAAQ)"
+	   data-org-name="saaq"
+	   data-org-pack="rapports-d-accident"
+	   data-desc="rapports-d-accident - resid : ada44698-f402-49aa-8524-26d224e61b49 - CSV"
+	   data-lien="https://dq-prd-bucket1.s3.ca-central-1.amazonaws.com/saaq/Rapport_Accident_2021.csv">
+          <i class="fa fa-arrow-circle-down"></i>	  
+          Télécharger
+        </a>
+      
+      
+    </li>
+  
+  
+
+        </ul>
+      </div>
+      
+    
+  </li>
+</div>
+                
+              
+                
+ 		  
+		  
+                  
+
+
+
+
+<div class="dqc-scheming-resource-item " data-loop-index="4" data-loop-indexori="4" data-display="donnees">
+  <li class="resource-item" data-id="50356277-13a1-49ce-9513-86a53bd234fc">
+    
+  <a class="heading" 
+     href="/recherche/dataset/rapports-d-accident/resource/50356277-13a1-49ce-9513-86a53bd234fc" 
+     title="Rapports d&#39;accident, 2020"
+     onClick="
+        gtag('event', 'vue', {
+          'event_category': 'Société de l\'assurance automobile du Québec (SAAQ)',
+          'event_label': 'rapports-d-accident - resid : 50356277-13a1-49ce-9513-86a53bd234fc - CSV',
+          'event_org_principale': 'gouvernement-du-quebec'
+        });
+	">
+    Rapports d&#39;accident, 2020<span class="label label-default dqc-label" property="dc:format" data-format="csv">CSV</span>
+    
+  </a>
+  <span class="description">(17 Mo)</span>
+  
+  
+  <p class="description">
+    <b>Dernière modification :</b>
+    
+    2022-08-25
+  </p>
+  
+
+    
+  <p class="description">
+    
+  </p>
+
+    
+      
+      <div class="dropdown btn-group">
+        <a href="#" class="btn btn-primary dropdown-toggle" type="button" id="dropdownExplorer" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa fa-share"></i>
+          Explorer
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownExplorer">
+          
+  <li>
+     <a href="/recherche/dataset/rapports-d-accident/resource/50356277-13a1-49ce-9513-86a53bd234fc"
+           class="resource-url-analytics"
+           target="_blank"
+           onClick='
+           gtag('event', 'vue', {
+            'event_category': 'Société de l\'assurance automobile du Québec (SAAQ)',
+            'event_label': 'rapports-d-accident - resid : 50356277-13a1-49ce-9513-86a53bd234fc - CSV',
+            'event_org_principale': 'gouvernement-du-quebec'
+            });
+	   '>
+      
+        <i class="fa fa-info-circle"></i>
+        Plus d'information
+      
+    </a>
+  </li>
+  
+    <li>
+      
+      
+        <a href="#"
+           class="dqc-download resource-url-analytics"
+           target="_blank"
+	   data-org-principale="gouvernement-du-quebec"
+	   data-org="Société de l\'assurance automobile du Québec (SAAQ)"
+	   data-org-name="saaq"
+	   data-org-pack="rapports-d-accident"
+	   data-desc="rapports-d-accident - resid : 50356277-13a1-49ce-9513-86a53bd234fc - CSV"
+	   data-lien="https://dq-prd-bucket1.s3.ca-central-1.amazonaws.com/saaq/Rapport_Accident_2020.csv">
+          <i class="fa fa-arrow-circle-down"></i>	  
+          Télécharger
+        </a>
+      
+      
+    </li>
+  
+  
+
+        </ul>
+      </div>
+      
+    
+  </li>
+</div>
+                
+              
+                
+ 		  
+		  
+                  
+
+
+
+
+<div class="dqc-scheming-resource-item " data-loop-index="5" data-loop-indexori="5" data-display="donnees">
+  <li class="resource-item" data-id="a792a2fe-776f-4aa5-9a69-bf67227ada68">
+    
+  <a class="heading" 
+     href="/recherche/dataset/rapports-d-accident/resource/a792a2fe-776f-4aa5-9a69-bf67227ada68" 
+     title="Rapports d&#39;accident, 2019"
+     onClick="
+        gtag('event', 'vue', {
+          'event_category': 'Société de l\'assurance automobile du Québec (SAAQ)',
+          'event_label': 'rapports-d-accident - resid : a792a2fe-776f-4aa5-9a69-bf67227ada68 - CSV',
+          'event_org_principale': 'gouvernement-du-quebec'
+        });
+	">
+    Rapports d&#39;accident, 2019<span class="label label-default dqc-label" property="dc:format" data-format="csv">CSV</span>
+    
+  </a>
+  <span class="description">(25 Mo)</span>
+  
+  
+  <p class="description">
+    <b>Dernière modification :</b>
+    
+    2022-08-25
+  </p>
+  
+
+    
+  <p class="description">
+    
+  </p>
+
+    
+      
+      <div class="dropdown btn-group">
+        <a href="#" class="btn btn-primary dropdown-toggle" type="button" id="dropdownExplorer" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa fa-share"></i>
+          Explorer
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownExplorer">
+          
+  <li>
+     <a href="/recherche/dataset/rapports-d-accident/resource/a792a2fe-776f-4aa5-9a69-bf67227ada68"
+           class="resource-url-analytics"
+           target="_blank"
+           onClick='
+           gtag('event', 'vue', {
+            'event_category': 'Société de l\'assurance automobile du Québec (SAAQ)',
+            'event_label': 'rapports-d-accident - resid : a792a2fe-776f-4aa5-9a69-bf67227ada68 - CSV',
+            'event_org_principale': 'gouvernement-du-quebec'
+            });
+	   '>
+      
+        <i class="fa fa-info-circle"></i>
+        Plus d'information
+      
+    </a>
+  </li>
+  
+    <li>
+      
+      
+        <a href="#"
+           class="dqc-download resource-url-analytics"
+           target="_blank"
+	   data-org-principale="gouvernement-du-quebec"
+	   data-org="Société de l\'assurance automobile du Québec (SAAQ)"
+	   data-org-name="saaq"
+	   data-org-pack="rapports-d-accident"
+	   data-desc="rapports-d-accident - resid : a792a2fe-776f-4aa5-9a69-bf67227ada68 - CSV"
+	   data-lien="https://dq-prd-bucket1.s3.ca-central-1.amazonaws.com/saaq/Rapport_Accident_2019.csv">
+          <i class="fa fa-arrow-circle-down"></i>	  
+          Télécharger
+        </a>
+      
+      
+    </li>
+  
+  
+
+        </ul>
+      </div>
+      
+    
+  </li>
+</div>
+                
+              
+                
+ 		  
+		  
+                  
+
+
+
+
+<div class="dqc-scheming-resource-item " data-loop-index="6" data-loop-indexori="6" data-display="donnees">
+  <li class="resource-item" data-id="86cbda2c-3bb8-4efe-a397-17a33450618f">
+    
+  <a class="heading" 
+     href="/recherche/dataset/rapports-d-accident/resource/86cbda2c-3bb8-4efe-a397-17a33450618f" 
+     title="Rapports d&#39;accident, 2018"
+     onClick="
+        gtag('event', 'vue', {
+          'event_category': 'Société de l\'assurance automobile du Québec (SAAQ)',
+          'event_label': 'rapports-d-accident - resid : 86cbda2c-3bb8-4efe-a397-17a33450618f - CSV',
+          'event_org_principale': 'gouvernement-du-quebec'
+        });
+	">
+    Rapports d&#39;accident, 2018<span class="label label-default dqc-label" property="dc:format" data-format="csv">CSV</span>
+    
+  </a>
+  <span class="description">(27 Mo)</span>
+  
+  
+  <p class="description">
+    <b>Dernière modification :</b>
+    
+    2022-08-25
+  </p>
+  
+
+    
+  <p class="description">
+    
+  </p>
+
+    
+      
+      <div class="dropdown btn-group">
+        <a href="#" class="btn btn-primary dropdown-toggle" type="button" id="dropdownExplorer" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa fa-share"></i>
+          Explorer
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownExplorer">
+          
+  <li>
+     <a href="/recherche/dataset/rapports-d-accident/resource/86cbda2c-3bb8-4efe-a397-17a33450618f"
+           class="resource-url-analytics"
+           target="_blank"
+           onClick='
+           gtag('event', 'vue', {
+            'event_category': 'Société de l\'assurance automobile du Québec (SAAQ)',
+            'event_label': 'rapports-d-accident - resid : 86cbda2c-3bb8-4efe-a397-17a33450618f - CSV',
+            'event_org_principale': 'gouvernement-du-quebec'
+            });
+	   '>
+      
+        <i class="fa fa-info-circle"></i>
+        Plus d'information
+      
+    </a>
+  </li>
+  
+    <li>
+      
+      
+        <a href="#"
+           class="dqc-download resource-url-analytics"
+           target="_blank"
+	   data-org-principale="gouvernement-du-quebec"
+	   data-org="Société de l\'assurance automobile du Québec (SAAQ)"
+	   data-org-name="saaq"
+	   data-org-pack="rapports-d-accident"
+	   data-desc="rapports-d-accident - resid : 86cbda2c-3bb8-4efe-a397-17a33450618f - CSV"
+	   data-lien="https://dq-prd-bucket1.s3.ca-central-1.amazonaws.com/saaq/Rapport_Accident_2018.csv">
+          <i class="fa fa-arrow-circle-down"></i>	  
+          Télécharger
+        </a>
+      
+      
+    </li>
+  
+  
+
+        </ul>
+      </div>
+      
+    
+  </li>
+</div>
+                
+              
+                
+ 		  
+		  
+                  
+
+
+
+
+<div class="dqc-scheming-resource-item " data-loop-index="7" data-loop-indexori="7" data-display="donnees">
+  <li class="resource-item" data-id="15470019-62a0-4e05-8c65-7c5e35d7dc8d">
+    
+  <a class="heading" 
+     href="/recherche/dataset/rapports-d-accident/resource/15470019-62a0-4e05-8c65-7c5e35d7dc8d" 
+     title="Rapports d&#39;accident, 2017"
+     onClick="
+        gtag('event', 'vue', {
+          'event_category': 'Société de l\'assurance automobile du Québec (SAAQ)',
+          'event_label': 'rapports-d-accident - resid : 15470019-62a0-4e05-8c65-7c5e35d7dc8d - CSV',
+          'event_org_principale': 'gouvernement-du-quebec'
+        });
+	">
+    Rapports d&#39;accident, 2017<span class="label label-default dqc-label" property="dc:format" data-format="csv">CSV</span>
+    
+  </a>
+  <span class="description">(28 Mo)</span>
+  
+  
+  <p class="description">
+    <b>Dernière modification :</b>
+    
+    2022-08-25
+  </p>
+  
+
+    
+  <p class="description">
+    
+  </p>
+
+    
+      
+      <div class="dropdown btn-group">
+        <a href="#" class="btn btn-primary dropdown-toggle" type="button" id="dropdownExplorer" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa fa-share"></i>
+          Explorer
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownExplorer">
+          
+  <li>
+     <a href="/recherche/dataset/rapports-d-accident/resource/15470019-62a0-4e05-8c65-7c5e35d7dc8d"
+           class="resource-url-analytics"
+           target="_blank"
+           onClick='
+           gtag('event', 'vue', {
+            'event_category': 'Société de l\'assurance automobile du Québec (SAAQ)',
+            'event_label': 'rapports-d-accident - resid : 15470019-62a0-4e05-8c65-7c5e35d7dc8d - CSV',
+            'event_org_principale': 'gouvernement-du-quebec'
+            });
+	   '>
+      
+        <i class="fa fa-info-circle"></i>
+        Plus d'information
+      
+    </a>
+  </li>
+  
+    <li>
+      
+      
+        <a href="#"
+           class="dqc-download resource-url-analytics"
+           target="_blank"
+	   data-org-principale="gouvernement-du-quebec"
+	   data-org="Société de l\'assurance automobile du Québec (SAAQ)"
+	   data-org-name="saaq"
+	   data-org-pack="rapports-d-accident"
+	   data-desc="rapports-d-accident - resid : 15470019-62a0-4e05-8c65-7c5e35d7dc8d - CSV"
+	   data-lien="https://dq-prd-bucket1.s3.ca-central-1.amazonaws.com/saaq/Rapport_Accident_2017.csv">
+          <i class="fa fa-arrow-circle-down"></i>	  
+          Télécharger
+        </a>
+      
+      
+    </li>
+  
+  
+
+        </ul>
+      </div>
+      
+    
+  </li>
+</div>
+                
+              
+                
+ 		  
+		  
+                  
+
+
+
+
+<div class="dqc-scheming-resource-item " data-loop-index="8" data-loop-indexori="8" data-display="donnees">
+  <li class="resource-item" data-id="6de63859-2803-42f7-82a9-124dfe78eadf">
+    
+  <a class="heading" 
+     href="/recherche/dataset/rapports-d-accident/resource/6de63859-2803-42f7-82a9-124dfe78eadf" 
+     title="Rapports d&#39;accident, 2016"
+     onClick="
+        gtag('event', 'vue', {
+          'event_category': 'Société de l\'assurance automobile du Québec (SAAQ)',
+          'event_label': 'rapports-d-accident - resid : 6de63859-2803-42f7-82a9-124dfe78eadf - CSV',
+          'event_org_principale': 'gouvernement-du-quebec'
+        });
+	">
+    Rapports d&#39;accident, 2016<span class="label label-default dqc-label" property="dc:format" data-format="csv">CSV</span>
+    
+  </a>
+  <span class="description">(28 Mo)</span>
+  
+  
+  <p class="description">
+    <b>Dernière modification :</b>
+    
+    2022-08-25
+  </p>
+  
+
+    
+  <p class="description">
+    
+  </p>
+
+    
+      
+      <div class="dropdown btn-group">
+        <a href="#" class="btn btn-primary dropdown-toggle" type="button" id="dropdownExplorer" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa fa-share"></i>
+          Explorer
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownExplorer">
+          
+  <li>
+     <a href="/recherche/dataset/rapports-d-accident/resource/6de63859-2803-42f7-82a9-124dfe78eadf"
+           class="resource-url-analytics"
+           target="_blank"
+           onClick='
+           gtag('event', 'vue', {
+            'event_category': 'Société de l\'assurance automobile du Québec (SAAQ)',
+            'event_label': 'rapports-d-accident - resid : 6de63859-2803-42f7-82a9-124dfe78eadf - CSV',
+            'event_org_principale': 'gouvernement-du-quebec'
+            });
+	   '>
+      
+        <i class="fa fa-info-circle"></i>
+        Plus d'information
+      
+    </a>
+  </li>
+  
+    <li>
+      
+      
+        <a href="#"
+           class="dqc-download resource-url-analytics"
+           target="_blank"
+	   data-org-principale="gouvernement-du-quebec"
+	   data-org="Société de l\'assurance automobile du Québec (SAAQ)"
+	   data-org-name="saaq"
+	   data-org-pack="rapports-d-accident"
+	   data-desc="rapports-d-accident - resid : 6de63859-2803-42f7-82a9-124dfe78eadf - CSV"
+	   data-lien="https://dq-prd-bucket1.s3.ca-central-1.amazonaws.com/saaq/Rapport_Accident_2016.csv">
+          <i class="fa fa-arrow-circle-down"></i>	  
+          Télécharger
+        </a>
+      
+      
+    </li>
+  
+  
+
+        </ul>
+      </div>
+      
+    
+  </li>
+</div>
+                
+              
+                
+ 		  
+		  
+                  
+
+
+
+
+<div class="dqc-scheming-resource-item overflow" data-loop-index="9" data-loop-indexori="9" data-display="donnees_overflow">
+  <li class="resource-item" data-id="5e970115-19f7-4dc7-8a20-13252b4ac5a1">
+    
+  <a class="heading" 
+     href="/recherche/dataset/rapports-d-accident/resource/5e970115-19f7-4dc7-8a20-13252b4ac5a1" 
+     title="Rapports d&#39;accident, 2015"
+     onClick="
+        gtag('event', 'vue', {
+          'event_category': 'Société de l\'assurance automobile du Québec (SAAQ)',
+          'event_label': 'rapports-d-accident - resid : 5e970115-19f7-4dc7-8a20-13252b4ac5a1 - CSV',
+          'event_org_principale': 'gouvernement-du-quebec'
+        });
+	">
+    Rapports d&#39;accident, 2015<span class="label label-default dqc-label" property="dc:format" data-format="csv">CSV</span>
+    
+  </a>
+  <span class="description">(28 Mo)</span>
+  
+  
+  <p class="description">
+    <b>Dernière modification :</b>
+    
+    2021-11-10
+  </p>
+  
+
+    
+  <p class="description">
+    
+  </p>
+
+    
+      
+      <div class="dropdown btn-group">
+        <a href="#" class="btn btn-primary dropdown-toggle" type="button" id="dropdownExplorer" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa fa-share"></i>
+          Explorer
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownExplorer">
+          
+  <li>
+     <a href="/recherche/dataset/rapports-d-accident/resource/5e970115-19f7-4dc7-8a20-13252b4ac5a1"
+           class="resource-url-analytics"
+           target="_blank"
+           onClick='
+           gtag('event', 'vue', {
+            'event_category': 'Société de l\'assurance automobile du Québec (SAAQ)',
+            'event_label': 'rapports-d-accident - resid : 5e970115-19f7-4dc7-8a20-13252b4ac5a1 - CSV',
+            'event_org_principale': 'gouvernement-du-quebec'
+            });
+	   '>
+      
+        <i class="fa fa-info-circle"></i>
+        Plus d'information
+      
+    </a>
+  </li>
+  
+    <li>
+      
+      
+        <a href="#"
+           class="dqc-download resource-url-analytics"
+           target="_blank"
+	   data-org-principale="gouvernement-du-quebec"
+	   data-org="Société de l\'assurance automobile du Québec (SAAQ)"
+	   data-org-name="saaq"
+	   data-org-pack="rapports-d-accident"
+	   data-desc="rapports-d-accident - resid : 5e970115-19f7-4dc7-8a20-13252b4ac5a1 - CSV"
+	   data-lien="https://dq-prd-bucket1.s3.ca-central-1.amazonaws.com/saaq/Rapport_Accident_2015.csv">
+          <i class="fa fa-arrow-circle-down"></i>	  
+          Télécharger
+        </a>
+      
+      
+    </li>
+  
+  
+
+        </ul>
+      </div>
+      
+    
+  </li>
+</div>
+                
+              
+                
+ 		  
+		  
+                  
+
+
+
+
+<div class="dqc-scheming-resource-item overflow" data-loop-index="10" data-loop-indexori="10" data-display="donnees_overflow">
+  <li class="resource-item" data-id="ef09c2d9-84a0-4be5-98f8-311b03164f20">
+    
+  <a class="heading" 
+     href="/recherche/dataset/rapports-d-accident/resource/ef09c2d9-84a0-4be5-98f8-311b03164f20" 
+     title="Rapports d&#39;accident, 2014"
+     onClick="
+        gtag('event', 'vue', {
+          'event_category': 'Société de l\'assurance automobile du Québec (SAAQ)',
+          'event_label': 'rapports-d-accident - resid : ef09c2d9-84a0-4be5-98f8-311b03164f20 - CSV',
+          'event_org_principale': 'gouvernement-du-quebec'
+        });
+	">
+    Rapports d&#39;accident, 2014<span class="label label-default dqc-label" property="dc:format" data-format="csv">CSV</span>
+    
+  </a>
+  <span class="description">(29 Mo)</span>
+  
+  
+  <p class="description">
+    <b>Dernière modification :</b>
+    
+    2022-05-31
+  </p>
+  
+
+    
+  <p class="description">
+    
+  </p>
+
+    
+      
+      <div class="dropdown btn-group">
+        <a href="#" class="btn btn-primary dropdown-toggle" type="button" id="dropdownExplorer" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa fa-share"></i>
+          Explorer
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownExplorer">
+          
+  <li>
+     <a href="/recherche/dataset/rapports-d-accident/resource/ef09c2d9-84a0-4be5-98f8-311b03164f20"
+           class="resource-url-analytics"
+           target="_blank"
+           onClick='
+           gtag('event', 'vue', {
+            'event_category': 'Société de l\'assurance automobile du Québec (SAAQ)',
+            'event_label': 'rapports-d-accident - resid : ef09c2d9-84a0-4be5-98f8-311b03164f20 - CSV',
+            'event_org_principale': 'gouvernement-du-quebec'
+            });
+	   '>
+      
+        <i class="fa fa-info-circle"></i>
+        Plus d'information
+      
+    </a>
+  </li>
+  
+    <li>
+      
+      
+        <a href="#"
+           class="dqc-download resource-url-analytics"
+           target="_blank"
+	   data-org-principale="gouvernement-du-quebec"
+	   data-org="Société de l\'assurance automobile du Québec (SAAQ)"
+	   data-org-name="saaq"
+	   data-org-pack="rapports-d-accident"
+	   data-desc="rapports-d-accident - resid : ef09c2d9-84a0-4be5-98f8-311b03164f20 - CSV"
+	   data-lien="https://dq-prd-bucket1.s3.ca-central-1.amazonaws.com/saaq/Rapport_Accident_2014.csv">
+          <i class="fa fa-arrow-circle-down"></i>	  
+          Télécharger
+        </a>
+      
+      
+    </li>
+  
+  
+
+        </ul>
+      </div>
+      
+    
+  </li>
+</div>
+                
+              
+                
+ 		  
+		  
+                  
+
+
+
+
+<div class="dqc-scheming-resource-item overflow" data-loop-index="11" data-loop-indexori="11" data-display="donnees_overflow">
+  <li class="resource-item" data-id="7cdb19ef-7151-484b-a6b7-509a14a4e612">
+    
+  <a class="heading" 
+     href="/recherche/dataset/rapports-d-accident/resource/7cdb19ef-7151-484b-a6b7-509a14a4e612" 
+     title="Rapports d&#39;accident, 2013"
+     onClick="
+        gtag('event', 'vue', {
+          'event_category': 'Société de l\'assurance automobile du Québec (SAAQ)',
+          'event_label': 'rapports-d-accident - resid : 7cdb19ef-7151-484b-a6b7-509a14a4e612 - CSV',
+          'event_org_principale': 'gouvernement-du-quebec'
+        });
+	">
+    Rapports d&#39;accident, 2013<span class="label label-default dqc-label" property="dc:format" data-format="csv">CSV</span>
+    
+  </a>
+  <span class="description">(32 Mo)</span>
+  
+  
+  <p class="description">
+    <b>Dernière modification :</b>
+    
+    2022-05-31
+  </p>
+  
+
+    
+  <p class="description">
+    
+  </p>
+
+    
+      
+      <div class="dropdown btn-group">
+        <a href="#" class="btn btn-primary dropdown-toggle" type="button" id="dropdownExplorer" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa fa-share"></i>
+          Explorer
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownExplorer">
+          
+  <li>
+     <a href="/recherche/dataset/rapports-d-accident/resource/7cdb19ef-7151-484b-a6b7-509a14a4e612"
+           class="resource-url-analytics"
+           target="_blank"
+           onClick='
+           gtag('event', 'vue', {
+            'event_category': 'Société de l\'assurance automobile du Québec (SAAQ)',
+            'event_label': 'rapports-d-accident - resid : 7cdb19ef-7151-484b-a6b7-509a14a4e612 - CSV',
+            'event_org_principale': 'gouvernement-du-quebec'
+            });
+	   '>
+      
+        <i class="fa fa-info-circle"></i>
+        Plus d'information
+      
+    </a>
+  </li>
+  
+    <li>
+      
+      
+        <a href="#"
+           class="dqc-download resource-url-analytics"
+           target="_blank"
+	   data-org-principale="gouvernement-du-quebec"
+	   data-org="Société de l\'assurance automobile du Québec (SAAQ)"
+	   data-org-name="saaq"
+	   data-org-pack="rapports-d-accident"
+	   data-desc="rapports-d-accident - resid : 7cdb19ef-7151-484b-a6b7-509a14a4e612 - CSV"
+	   data-lien="https://dq-prd-bucket1.s3.ca-central-1.amazonaws.com/saaq/Rapport_Accident_2013.csv">
+          <i class="fa fa-arrow-circle-down"></i>	  
+          Télécharger
+        </a>
+      
+      
+    </li>
+  
+  
+
+        </ul>
+      </div>
+      
+    
+  </li>
+</div>
+                
+              
+                
+ 		  
+		  
+                  
+
+
+
+
+<div class="dqc-scheming-resource-item overflow" data-loop-index="12" data-loop-indexori="12" data-display="donnees_overflow">
+  <li class="resource-item" data-id="6120b9e2-544c-445e-b773-94b673691b15">
+    
+  <a class="heading" 
+     href="/recherche/dataset/rapports-d-accident/resource/6120b9e2-544c-445e-b773-94b673691b15" 
+     title="Rapports d&#39;accident, 2012"
+     onClick="
+        gtag('event', 'vue', {
+          'event_category': 'Société de l\'assurance automobile du Québec (SAAQ)',
+          'event_label': 'rapports-d-accident - resid : 6120b9e2-544c-445e-b773-94b673691b15 - CSV',
+          'event_org_principale': 'gouvernement-du-quebec'
+        });
+	">
+    Rapports d&#39;accident, 2012<span class="label label-default dqc-label" property="dc:format" data-format="csv">CSV</span>
+    
+  </a>
+  <span class="description">(32 Mo)</span>
+  
+  
+  <p class="description">
+    <b>Dernière modification :</b>
+    
+    2022-05-31
+  </p>
+  
+
+    
+  <p class="description">
+    
+  </p>
+
+    
+      
+      <div class="dropdown btn-group">
+        <a href="#" class="btn btn-primary dropdown-toggle" type="button" id="dropdownExplorer" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa fa-share"></i>
+          Explorer
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownExplorer">
+          
+  <li>
+     <a href="/recherche/dataset/rapports-d-accident/resource/6120b9e2-544c-445e-b773-94b673691b15"
+           class="resource-url-analytics"
+           target="_blank"
+           onClick='
+           gtag('event', 'vue', {
+            'event_category': 'Société de l\'assurance automobile du Québec (SAAQ)',
+            'event_label': 'rapports-d-accident - resid : 6120b9e2-544c-445e-b773-94b673691b15 - CSV',
+            'event_org_principale': 'gouvernement-du-quebec'
+            });
+	   '>
+      
+        <i class="fa fa-info-circle"></i>
+        Plus d'information
+      
+    </a>
+  </li>
+  
+    <li>
+      
+      
+        <a href="#"
+           class="dqc-download resource-url-analytics"
+           target="_blank"
+	   data-org-principale="gouvernement-du-quebec"
+	   data-org="Société de l\'assurance automobile du Québec (SAAQ)"
+	   data-org-name="saaq"
+	   data-org-pack="rapports-d-accident"
+	   data-desc="rapports-d-accident - resid : 6120b9e2-544c-445e-b773-94b673691b15 - CSV"
+	   data-lien="https://dq-prd-bucket1.s3.ca-central-1.amazonaws.com/saaq/Rapport_Accident_2012.csv">
+          <i class="fa fa-arrow-circle-down"></i>	  
+          Télécharger
+        </a>
+      
+      
+    </li>
+  
+  
+
+        </ul>
+      </div>
+      
+    
+  </li>
+</div>
+                
+              
+                
+ 		  
+		  
+                  
+
+
+
+
+<div class="dqc-scheming-resource-item overflow" data-loop-index="13" data-loop-indexori="13" data-display="donnees_overflow">
+  <li class="resource-item" data-id="ae48049c-ab36-4e27-ab22-dc505c832ffe">
+    
+  <a class="heading" 
+     href="/recherche/dataset/rapports-d-accident/resource/ae48049c-ab36-4e27-ab22-dc505c832ffe" 
+     title="Rapports d&#39;accident, 2011"
+     onClick="
+        gtag('event', 'vue', {
+          'event_category': 'Société de l\'assurance automobile du Québec (SAAQ)',
+          'event_label': 'rapports-d-accident - resid : ae48049c-ab36-4e27-ab22-dc505c832ffe - CSV',
+          'event_org_principale': 'gouvernement-du-quebec'
+        });
+	">
+    Rapports d&#39;accident, 2011<span class="label label-default dqc-label" property="dc:format" data-format="csv">CSV</span>
+    
+  </a>
+  <span class="description">(34 Mo)</span>
+  
+  
+  <p class="description">
+    <b>Dernière modification :</b>
+    
+    2022-05-31
+  </p>
+  
+
+    
+  <p class="description">
+    
+  </p>
+
+    
+      
+      <div class="dropdown btn-group">
+        <a href="#" class="btn btn-primary dropdown-toggle" type="button" id="dropdownExplorer" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa fa-share"></i>
+          Explorer
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownExplorer">
+          
+  <li>
+     <a href="/recherche/dataset/rapports-d-accident/resource/ae48049c-ab36-4e27-ab22-dc505c832ffe"
+           class="resource-url-analytics"
+           target="_blank"
+           onClick='
+           gtag('event', 'vue', {
+            'event_category': 'Société de l\'assurance automobile du Québec (SAAQ)',
+            'event_label': 'rapports-d-accident - resid : ae48049c-ab36-4e27-ab22-dc505c832ffe - CSV',
+            'event_org_principale': 'gouvernement-du-quebec'
+            });
+	   '>
+      
+        <i class="fa fa-info-circle"></i>
+        Plus d'information
+      
+    </a>
+  </li>
+  
+    <li>
+      
+      
+        <a href="#"
+           class="dqc-download resource-url-analytics"
+           target="_blank"
+	   data-org-principale="gouvernement-du-quebec"
+	   data-org="Société de l\'assurance automobile du Québec (SAAQ)"
+	   data-org-name="saaq"
+	   data-org-pack="rapports-d-accident"
+	   data-desc="rapports-d-accident - resid : ae48049c-ab36-4e27-ab22-dc505c832ffe - CSV"
+	   data-lien="https://dq-prd-bucket1.s3.ca-central-1.amazonaws.com/saaq/Rapport_Accident_2011.csv">
+          <i class="fa fa-arrow-circle-down"></i>	  
+          Télécharger
+        </a>
+      
+      
+    </li>
+  
+  
+
+        </ul>
+      </div>
+      
+    
+  </li>
+</div>
+                
+              
+            
+
+	    
+	      <section class="dqc-scheming-show-more-resources">
+  	        <a href="#" data-display-more-target="donnees_overflow"><i class="fa-regular fa-square-plus dqc-scheming-icon-closed"></i> Montrer plus de ressources</a>
+        		<a href="#"style="display:none;" data-display-less-target="donnees_overflow"><i class="fa-regular fa-square-minus dqc-scheming-icon-open"></i> Afficher moins de ressources</a>
+        </section> 
+	    
+
+          
+
+  	    
+	    
+
+            
+            
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+            
+
+	    
+
+          
+
+  	    
+	    
+
+            
+              <h4 class="dqc-scheming-sub-header">Documentation</h4>
+            
+            
+              
+                
+ 		  
+		  
+                  
+
+
+
+
+<div class="dqc-scheming-resource-item " data-loop-index="1" data-loop-indexori="1" data-display="support">
+  <li class="resource-item" data-id="86cd3bcb-fe10-4ca5-992e-5bb80e5c534a">
+    
+  <a class="heading" 
+     href="/recherche/dataset/rapports-d-accident/resource/86cd3bcb-fe10-4ca5-992e-5bb80e5c534a" 
+     title="Documentation sur les variables"
+     onClick="
+        gtag('event', 'vue', {
+          'event_category': 'Société de l\'assurance automobile du Québec (SAAQ)',
+          'event_label': 'rapports-d-accident - resid : 86cd3bcb-fe10-4ca5-992e-5bb80e5c534a - PDF',
+          'event_org_principale': 'gouvernement-du-quebec'
+        });
+	">
+    Documentation sur les variables<span class="label label-default dqc-label" property="dc:format" data-format="pdf">PDF</span>
+    
+  </a>
+  </span>
+  
+  
+  <p class="description">
+    <b>Dernière modification :</b>
+    
+    2023-12-18
+  </p>
+  
+
+    
+  <p class="description">
+    
+  </p>
+
+    
+      
+      <div class="dropdown btn-group">
+        <a href="#" class="btn btn-primary dropdown-toggle" type="button" id="dropdownExplorer" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa fa-share"></i>
+          Explorer
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownExplorer">
+          
+  <li>
+     <a href="/recherche/dataset/rapports-d-accident/resource/86cd3bcb-fe10-4ca5-992e-5bb80e5c534a"
+           class="resource-url-analytics"
+           target="_blank"
+           onClick='
+           gtag('event', 'vue', {
+            'event_category': 'Société de l\'assurance automobile du Québec (SAAQ)',
+            'event_label': 'rapports-d-accident - resid : 86cd3bcb-fe10-4ca5-992e-5bb80e5c534a - PDF',
+            'event_org_principale': 'gouvernement-du-quebec'
+            });
+	   '>
+      
+        <i class="fa fa-info-circle"></i>
+        Plus d'information
+      
+    </a>
+  </li>
+  
+    <li>
+      
+      
+        <a href="#"
+           class="dqc-download resource-url-analytics"
+           target="_blank"
+	   data-org-principale="gouvernement-du-quebec"
+	   data-org="Société de l\'assurance automobile du Québec (SAAQ)"
+	   data-org-name="saaq"
+	   data-org-pack="rapports-d-accident"
+	   data-desc="rapports-d-accident - resid : 86cd3bcb-fe10-4ca5-992e-5bb80e5c534a - PDF"
+	   data-lien="https://www.donneesquebec.ca/recherche/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/86cd3bcb-fe10-4ca5-992e-5bb80e5c534a/download/rapports-accident-documentation.pdf">
+          <i class="fa fa-arrow-circle-down"></i>	  
+          Télécharger
+        </a>
+      
+      
+    </li>
+  
+  
+
+        </ul>
+      </div>
+      
+    
+  </li>
+</div>
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+            
+
+	    
+
+          
+
+  	    
+	    
+
+            
+            
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+            
+
+	    
+
+          
+
+  	    
+	    
+
+            
+            
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+            
+
+	    
+
+          
+
+  	    
+	    
+
+            
+              
+            
+            
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+            
+
+	    
+
+          
+          
+	  <style>
+            .overflow { display:none; }
+	  </style>
+        
+      </ul>
+    
+  
+</section>
+
+  
+
+  
+
+
+  
+  
+
+
+
+
+<section id="fiche_descriptive" class="additional-info">
+  <h3>Fiche descriptive du jeu de données</h3>
+  <table class="table table-striped table-bordered table-condensed">
+    <thead>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <th scope="row" class="dataset-label">Organisation</th>
+          <td class="dataset-details">
+            <a href="/recherche/dataset/?organization=saaq">
+              Société de l&#39;assurance automobile du Québec (SAAQ)
+            </a>
+          </td>
+        </tr>
+      
+      
+        <tr>
+          <th scope="row" class="dataset-label">Catégories</th>
+          <td class="dataset-details">
+            
+              <a href="/recherche/group/transport">
+                Transport
+              </a>
+              
+            
+          </td>
+        </tr>
+      
+      
+        <tr>
+          <th scope="row" class="dataset-label">Étiquettes</th>
+          <td class="dataset-details">
+            
+              <a href="/recherche/dataset/?tags=Accident+de+la+route">
+                Accident de la route
+              </a>
+              
+                <br/>
+              
+            
+              <a href="/recherche/dataset/?tags=HackQC17">
+                HackQC17
+              </a>
+              
+                <br/>
+              
+            
+              <a href="/recherche/dataset/?tags=Transport">
+                Transport
+              </a>
+              
+                <br/>
+              
+            
+          </td>
+        </tr>
+      
+ 
+      <tr>
+        <th scope="row" class="dataset-label">Licence</th>
+        <td class="dataset-details">
+          
+
+
+
+  
+    
+  
+    <a href="https://www.donneesquebec.ca/licence/#cc-by" rel="dc:rights">
+      
+        <img src="/recherche/images/cc-by.png" title="Attribution (CC-BY 4.0)" height="15px">
+      
+      Attribution (CC-BY 4.0)
+    </a>
+  
+
+  
+
+
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row" class="dataset-label">Citation recommandée</th>
+        <td class="dataset-details">
+          
+            
+                    
+          
+          
+          <span id="citation">
+            SOCIÉTÉ DE L&#39;ASSURANCE AUTOMOBILE DU QUÉBEC (SAAQ). Rapports d&#39;accident, [Jeu de données], dans Données Québec, 2017, mis à jour le 18 décembre 2023. [https://www.donneesquebec.ca/recherche/dataset/rapports-d-accident], (consulté le 11 mars 2026).
+          </span>
+          <a class="btn" id="btn-copy-citation" style="padding: 5px"><i class="fa-regular fa-copy"></i></a>
+        </td>
+      </tr><tr>
+            <th scope="row" class="dataset-label">Responsable</th>
+            <td class="dataset-details dqc-truncate-to-700" property="dc:creator">Direction de la recherche et du développement en sécurité routière</td>
+          </tr><tr>
+            <th scope="row" class="dataset-label">Courriel</th>
+            <td class="dataset-details dqc-truncate-to-700" property="dc:creator">
+
+  
+  
+  <a href=mailto:donnees.ouvertes@saaq.gouv.qc.ca>donnees.ouvertes@saaq.gouv.qc.ca</a>
+
+</td>
+          </tr><tr>
+            <th scope="row" class="dataset-label">Fréquence de mise à jour</th>
+            <td class="dataset-details dqc-truncate-to-700">Annuel</td>
+          </tr><tr>
+            <th scope="row" class="dataset-label">Couverture géographique</th>
+            <td class="dataset-details dqc-truncate-to-700">Tout le Québec</td>
+          </tr><tr>
+            <th scope="row" class="dataset-label">Couverture temporelle</th>
+            <td class="dataset-details dqc-truncate-to-700">2011-01-01 / 2022-12-31</td>
+          </tr><tr>
+            <th scope="row" class="dataset-label">Informations complémentaires</th>
+            <td class="dataset-details dqc-truncate-to-700">
+<p>Dans ses publications officielles, la Société de l'assurance automobile du Québec présente les statistiques d’accidents qui lui sont transmises par les policiers du Québec.</p>
+<p>Pour être comptabilisés, les accidents doivent présenter soit des dommages corporels, soit une évaluation des dommages matériels supérieure au seuil de rapportage. Ce seuil est estimé à plus de 2 000 $ depuis le 18 mars 2010. De plus, tous les accidents doivent impliquer au moins un véhicule ayant l'autorisation de circuler sur le réseau routier.</p>
+<p>Les accidents listés dans le fichier pour le site du gouvernement ouvert sont la représentation granulaire des accidents compilés dans le bilan routier québécois. Chaque ligne du fichier décrit avec précision un accident de la route.</p>
+<p>La <a href="https://www.donneesquebec.ca/recherche/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/86cd3bcb-fe10-4ca5-992e-5bb80e5c534a/download/rapports-accident-documentation.pdf">documentation sur les variables</a> permet de mieux comprendre les variables énumérées dans le fichier. La définition de chacune des variables ainsi que le choix des modalités qu'elles peuvent prendre sont ainsi présentés.</p>
+<p>Annuellement, une nouvelle base de données sur les accidents de la route sera ajoutée à celles déjà présentes sur le site de Données Québec. Elle contiendra la liste des accidents survenus au Québec durant la dernière année. De plus, les accidents des deux années antérieures à la dernière année seront mis à jour à la lumière des validations additionnelles effectuées par la Société de l’assurance automobile du Québec. Ces validations permettent de s’assurer que la définition de décès de la route répond à la norme généralement reconnue à l’international, soit que les décès sont survenus à l’intérieur d’un délai de 30 jours suivant l’accident, et que ces informations publiées sont cohérentes avec le bilan routier annuel de la Société.</p></td>
+          </tr><tr>
+            <th scope="row" class="dataset-label">DOI</th>
+            <td class="dataset-details dqc-truncate-to-700"></td>
+          </tr><tr>
+            <th scope="row" class="dataset-label">Site internet de l&#39;organisation ou de référence</th>
+            <td class="dataset-details dqc-truncate-to-700" property="foaf:homepage">
+<a href="https://saaq.gouv.qc.ca/" rel="foaf:homepage" target="_blank" title="foaf:homepage">https://saaq.gouv.qc.ca/</a></td>
+          </tr>
+      <tr>
+        <th scope="row" class="dataset-label"><a href="/lignes-directrices-sur-la-diffusion-de-donnees-ouvertes/" target="_blank">Respect des lignes directrices</a></th>
+        <td class="dataset-details">
+            
+            
+            
+
+            
+              
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+              
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+                  
+                    
+                  
+                
+
+              
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+                  
+                
+
+              
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+                  
+                
+
+              
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+                  
+                
+
+              
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+                  
+                
+
+              
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+                  
+                
+
+              
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+                  
+                
+
+              
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+                  
+                
+
+              
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+                  
+                
+
+              
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+                  
+                
+
+              
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+                  
+                
+
+              
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+                  
+                
+
+              
+            
+
+            <meter id="relidi_status" min="0" max="5" low="2.5" high="4.5" optimum="4.75" value="5.0" title="%"></meter> 100.0%
+        </td>
+      </tr>
+      
+
+      <tr>
+        <th scope="row" class="dataset-label">Dernière modification (métadonnées ou ressources)</th>
+        <td class="dataset-details">
+          
+              2023-12-18 21:52 EST
+          
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row" class="dataset-label">Diffusion initiale</th>
+        <td class="dataset-details">
+          2017-02-13 11:42 EST 
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class="dataset-label">Identifiant</th>
+        <td class="dataset-details">
+          8dd0ab9b-d45d-4526-9256-c598fbc4ff3a
+        </td>
+      </tr>
+    </tbody>
+  </table>
+ 
+</section>
+
+
+
+
+                    </div>
+                  </article>
+                
+              </div>
+            
+          </div>
+        
+      </div>
+    </div>
+  
+    <footer class="site-footer">
+  <div class="container">
+    
+
+  
+  <div id="cookie-notice" role="dialog" class="cookie-revoke-visible cookie-notice-hidden cn-position-bottom cn-effect-fade" aria-label="Cookie Notice">
+  
+    <div class="cookie-notice-container">
+      <div class="cn-text-container-block">
+        <span id="cn-notice-text1" class="cn-text-container">
+          <h2>Utilisation des témoins de connexion</h2>
+        </span>      
+        <span id="cn-notice-text" class="cn-text-container">
+          Nous utilisons des témoins de connexion (cookies) qui permettent d’assurer le bon fonctionnement de notre site Web, d’améliorer votre expérience de navigation et d’évaluer la performance de notre site.
+        </span>
+        <span class="cn-text-container"></span>
+        <span id="cn-notice-text2" class="cn-text-container">
+          Pour plus d’information, vous pouvez consulter notre <a class="faq-more-questions-link" href="https://www.donneesquebec.ca/politique-de-confidentialite/">Politique de confidentialité</a>.
+        </span>
+      </div>
+      <span id="cn-notice-buttons" class="cn-buttons-container">
+        <a href="#" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button cn-button-custom btn btn-primary" aria-label="Je comprends">
+          Je comprends
+        </a>
+      </span>
+    </div>
+  
+  </div>
+  <script type="text/javascript" id="cookie-verification">
+    function checkCookie() {      
+      $( window ).on( "load", function() {
+        if ($("body").hasClass("cookies-set")) {
+          $( "#cookie-notice" ).removeClass( "cookie-notice-visible" );
+          $( "#cookie-notice" ).addClass( "cookie-notice-hidden" );
+          $( "#cookie-notice" ).removeClass( "cookie-revoke-hidden" );
+          $( "#cookie-notice" ).addClass( "cookie-revoke-visible" );   
+          $( "#cookie-notice" ).removeClass( "cn-animated" );    
+        } else if($("body").hasClass("cookies-not-set")) {
+          $( "#cookie-notice" ).removeClass( "cookie-notice-hidden" );
+          $( "#cookie-notice" ).addClass( "cookie-notice-visible" );
+          $( "#cookie-notice" ).removeClass( "cookie-revoke-visible" );
+          $( "#cookie-notice" ).addClass( "cookie-revoke-hidden" );
+          $( "#cookie-notice" ).removeClass( "cn-animated" );  
+        }
+        if ($('#cookie-notice').length > 0 && !($('body').hasClass('cookies-set'))) {
+
+          //var overlayBody = $('<div></div>', { class: 'cookies-overlay-body'});
+          //$('#cookie-notice').wrap(overlayBody);
+ 
+          //$('body').append(overlayBody);
+          //const $floatingDiv = $('#cookie-notice');
+  
+          // Function to trap tabbing inside the floating div
+          function trapTabbing(event) {            // If Tab key is pressed
+              if (event.key === 'Tab') {
+  
+                  const $focusableElements = $floatingDiv.find('input, button, a'); // Select input and button elements inside floating-div
+                  const firstFocusableElement = $focusableElements.first();
+                  const lastFocusableElement = $focusableElements.last();
+  
+                  // Shift + Tab (move backwards) behavior
+                  if (event.shiftKey) {
+                      if (document.activeElement === firstFocusableElement[0] || !$focusableElements.is(document.activeElement)) {
+                          lastFocusableElement[0].focus(); // Focus the last element if Shift + Tab on the first element
+                          event.preventDefault(); // Prevent the default tabbing
+                      }
+                  }
+                  // Tab (move forwards) behavior
+                  else {
+                      if (document.activeElement === lastFocusableElement[0] || !$focusableElements.is(document.activeElement)) {
+                          firstFocusableElement[0].focus(); // Focus the first element if Tab on the last element
+                          event.preventDefault(); // Prevent the default tabbing
+                      }
+                  }
+              }
+          }
+  
+          // Add event listener for keydown event
+          $floatingDiv.on('keydown', trapTabbing);
+          $(document).on('keydown', trapTabbing);
+  
+  
+          var observer = new MutationObserver(function (mutations, observer) {
+              for (let mutation of mutations) {
+                  if (mutation.type === 'attributes' && mutation.attributeName === 'class' && $('body').hasClass('cookies-set')) {
+                      $('#cookie-notice').unwrap();
+                      $floatingDiv.off('keydown', trapTabbing);
+                      $(document).off('keydown', trapTabbing);
+                      observer.disconnect();
+                      $('#cookie-notice').hide();
+                  }
+              }
+          });
+  
+          var target = document.querySelector('body');
+          observer.observe(target, {
+              attributes: true
+          });
+  
+        } else if($('#cookie-notice').length > 0){
+          $('#cookie-notice').hide();
+        }
+
+      });       
+      
+      
+      
+    }
+    checkCookie();
+  </script>
+   
+
+  <div id="footer" class="row">
+    <div class="col-md-4 footer-links">
+      <h4>En savoir plus</h4>
+      <ul class="list-unstyled dqc-footer-links">
+        <li><a href="/licence/">Licence d'utilisation</a></li>
+        <li><a href="/recherche/stats/">Statistiques</a></li>
+	      <li><a href="/page-api/">Interface de programmation d'application (API)</a></li>
+        <li><a href="/actualites/">Quoi de neuf?</a></li>
+        <li><a href="/foire-aux-questions/">Foire aux questions (FAQ)</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4 footer-links">
+      <h4>Partenariat</h4>
+      <ul class="list-unstyled dqc-footer-links">
+        <li><a href="/lignes-directrices-sur-la-diffusion-de-donnees-ouvertes/">Lignes directrices</a></li>
+        <li><a href="/normes-etablies/">Normes établies<img class="dqc_norm_picto" src="/recherche/images/Icone_normalise_picto.svg" /></a></li>
+        <li><a href="/donnees-ouvertes-de-reference">Données ouvertes de référence<img class="dqc_ref_picto" src="/recherche/images/Icone_JeuxReference_picto.svg" /></a></li>
+	      <li><a href="/politique-cadre/">Politique-cadre municipale</a></li>
+	      <li><a href="https://hackqc.donneesquebec.ca/" target="_blank">HackQC<img class="linkExtImg" src="/recherche/images/lien-externe-blanc.svg"></a></li>
+      </ul>
+    </div>
+    <div class="col-md-3 footer-links">
+      <nav>
+        <h4>Nous joindre</h4>
+        <ul class="list-unstyled dqc-footer-links dqc-footer-icons">
+          <li><a href="/nous-joindre-renseignements-generaux/" title="Nous joindre"><span class="fa fa-envelope"></span></a></li>
+        </ul>
+      </nav>
+      <nav>
+        <h4>Nous suivre</h4>
+        <ul class="list-inline dqc-footer-links dqc-footer-icons">
+          <li class="list-inline-item"><a href="https://twitter.com/GouvOuvertQc" target="_blank" title="X"><span class="fa-brands fa-x-twitter"></span></a></li>
+          <li class="list-inline-item"><a href="/recherche/feeds/dataset.atom" title="Fil RSS des jeux de donnÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©es"><span class="fa-solid fa-rss"></span></a></li>
+          <li class="list-inline-item"><a href="https://www.linkedin.com/groups/12703445/" target="_blank" title="LinkedIn"><span class="fa-brands fa-linkedin-in"></span></a></li>
+          <li class="list-inline-item"><a href="https://www.youtube.com/channel/UC5IDqxFhKrBKDZXHID7cyEw" target="_blank" title="Youtube"><span class="fa-brands fa-youtube"></span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+ <!-- this div closes parent container in CKAN template -->
+ </div>
+
+  
+  <div class="dqc-piv-bas">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <ul class="list-inline mx-auto text-center text-body">
+            <li><a href="/a-propos/">À propos</a></li>
+            <li><a href="/accessibilite/">Accessibilité</a></li>
+            <li><a href="/plan-du-site/">Plan du site</a></li>
+            <li><a href="/consignes-de-securite/">Consignes de sécurité</a></li>
+            <li><a href="/politique-de-confidentialite/">Politique de confidentialité</a></li>
+          </ul>
+        </div>
+        <div class="col-12 text-center">
+          <a href="https://quebec.ca" target="_blank">
+	    <img id="logoFooter" class="logo" alt="Gouvernement du Québec." src="/recherche/images/QUEBEC_couleur.svg" style="height:50px"></a>
+        </div>
+        <div class="col-12 text-center">
+	      <p><a href="https://www.quebec.ca/droit-auteur" class="notice" target="_blank" style="color:#000 !important;">Gouvernement du Québec,&nbsp;<script>document.write(new Date().getFullYear())</script></a></p>
+        </div>
+      </div>
+    </div>
+
+  <span id="dqc_boutonHautWrap">
+    <span id="dqc_boutonHaut">
+	    <img src="/recherche/images/fleche-haut.svg" alt="Retour au haut" title="Retour au haut">
+    </span>
+  </span>
+
+  <!-- Modal pour le sondage -->
+  <div id="surveyModal" class="modal-dialog modal-side modal-top-right" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <span class="modal-title">Sondage Données Québec</span>
+	      Vous utilisez des données? Vous avez des idées pour améliorer Données Québec? Prenez 5 minutes pour vous exprimer sur Consultation Québec.
+      </div>
+      <div class="modal-footer">
+        <button id="takeSurvey" type="button" class="btn btn-primary" data-dismiss="modal">J'y vais!</button>
+        <button id="closeSurvey" type="button" class="btn btn-primary">Non, merci</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="copyURLDialog" class="fadeOut">
+    <p class="copyMessage">L'URL du service Web a été copié dans le presse-papier</p>  	
+  </div>
+
+  <!-- this container has no end div: we use the one from CKAN's template -->
+  
+  
+
+
+
+  
+ 
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5RS6V6X20Q"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5RS6V6X20Q');
+  
+    gtag('set', {
+      'dimension1':'dataset',
+      'dimension2':'8dd0ab9b-d45d-4526-9256-c598fbc4ff3a',
+      'dimension3':'Rapports d&#39;accident'
+    });
+  
+  </script>
+
+
+
+  
+  
+  <script>
+    var CKAN = CKAN || {};
+    CKAN.SITE_URL = CKAN.SITE_URL || 'https://www.donneesquebec.ca' + '/recherche';
+  </script>
+
+  <!-- mobile menu script -->
+  <script>
+    var btn = document.querySelector('.toggle_btn');
+    var nav = document.querySelector('.nav');
+    btn.onclick = function() {
+      nav.classList.toggle('nav_open');
+      btn.classList.toggle('toggle_btn_open');
+    }
+  </script>
+
+
+  </div>
+</footer>
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+    "@context": {
+        "brick": "https://brickschema.org/schema/Brick#",
+        "csvw": "http://www.w3.org/ns/csvw#",
+        "dc": "http://purl.org/dc/elements/1.1/",
+        "dcam": "http://purl.org/dc/dcam/",
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "dcmitype": "http://purl.org/dc/dcmitype/",
+        "dcterms": "http://purl.org/dc/terms/",
+        "doap": "http://usefulinc.com/ns/doap#",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "geo": "http://www.opengis.net/ont/geosparql#",
+        "odrl": "http://www.w3.org/ns/odrl/2/",
+        "org": "http://www.w3.org/ns/org#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "prof": "http://www.w3.org/ns/dx/prof/",
+        "prov": "http://www.w3.org/ns/prov#",
+        "qb": "http://purl.org/linked-data/cube#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "http://schema.org/",
+        "sh": "http://www.w3.org/ns/shacl#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "sosa": "http://www.w3.org/ns/sosa/",
+        "ssn": "http://www.w3.org/ns/ssn/",
+        "time": "http://www.w3.org/2006/time#",
+        "vann": "http://purl.org/vocab/vann/",
+        "void": "http://rdfs.org/ns/void#",
+        "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@graph": [
+        {
+            "@id": "https://www.donneesquebec.ca/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/ada44698-f402-49aa-8524-26d224e61b49",
+            "@type": "schema:DataDownload",
+            "schema:contentSize": 28566763,
+            "schema:encodingFormat": "CSV",
+            "schema:name": "Rapports d'accident, 2021",
+            "schema:url": "https://dq-prd-bucket1.s3.ca-central-1.amazonaws.com/saaq/Rapport_Accident_2021.csv"
+        },
+        {
+            "@id": "https://www.donneesquebec.ca/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/6de63859-2803-42f7-82a9-124dfe78eadf",
+            "@type": "schema:DataDownload",
+            "schema:contentSize": 42846997,
+            "schema:encodingFormat": "CSV",
+            "schema:name": "Rapports d'accident, 2016",
+            "schema:url": "https://dq-prd-bucket1.s3.ca-central-1.amazonaws.com/saaq/Rapport_Accident_2016.csv"
+        },
+        {
+            "@id": "https://www.donneesquebec.ca/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/ae48049c-ab36-4e27-ab22-dc505c832ffe",
+            "@type": "schema:DataDownload",
+            "schema:contentSize": 31198269,
+            "schema:encodingFormat": "CSV",
+            "schema:name": "Rapports d'accident, 2011",
+            "schema:url": "https://dq-prd-bucket1.s3.ca-central-1.amazonaws.com/saaq/Rapport_Accident_2011.csv"
+        },
+        {
+            "@id": "https://www.donneesquebec.ca/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/a792a2fe-776f-4aa5-9a69-bf67227ada68",
+            "@type": "schema:DataDownload",
+            "schema:contentSize": 38254510,
+            "schema:encodingFormat": "CSV",
+            "schema:name": "Rapports d'accident, 2019",
+            "schema:url": "https://dq-prd-bucket1.s3.ca-central-1.amazonaws.com/saaq/Rapport_Accident_2019.csv"
+        },
+        {
+            "@id": "https://www.donneesquebec.ca/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/7cdb19ef-7151-484b-a6b7-509a14a4e612",
+            "@type": "schema:DataDownload",
+            "schema:contentSize": 49305146,
+            "schema:encodingFormat": "CSV",
+            "schema:name": "Rapports d'accident, 2013",
+            "schema:url": "https://dq-prd-bucket1.s3.ca-central-1.amazonaws.com/saaq/Rapport_Accident_2013.csv"
+        },
+        {
+            "@id": "https://www.donneesquebec.ca/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a",
+            "@type": "schema:Dataset",
+            "schema:about": {
+                "@id": "_:N5fff4b9212ea414aa74813a0133fa9b5"
+            },
+            "schema:creator": {
+                "@id": "https://www.donneesquebec.ca/organization/d1a4202e-1ae1-4820-be07-0cca45a98e23"
+            },
+            "schema:dateModified": "2023-12-19T02:52:44.537047",
+            "schema:datePublished": "2017-02-13T16:42:15.946000",
+            "schema:description": "Donn\u00e9es issues des rapports d\u2019accident remplis par les policiers, incluant notamment le moment, la gravit\u00e9 de l\u2019accident de m\u00eame que le type des v\u00e9hicules impliqu\u00e9s.\r\n\r\nLes donn\u00e9es ont \u00e9t\u00e9 r\u00e9vis\u00e9es pour respecter les nouvelles dispositions de la loi 25 prot\u00e9geant la vie priv\u00e9e des Qu\u00e9b\u00e9cois.",
+            "schema:distribution": [
+                {
+                    "@id": "https://www.donneesquebec.ca/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/ae48049c-ab36-4e27-ab22-dc505c832ffe"
+                },
+                {
+                    "@id": "https://www.donneesquebec.ca/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/86cd3bcb-fe10-4ca5-992e-5bb80e5c534a"
+                },
+                {
+                    "@id": "https://www.donneesquebec.ca/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/a792a2fe-776f-4aa5-9a69-bf67227ada68"
+                },
+                {
+                    "@id": "https://www.donneesquebec.ca/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/50356277-13a1-49ce-9513-86a53bd234fc"
+                },
+                {
+                    "@id": "https://www.donneesquebec.ca/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/6120b9e2-544c-445e-b773-94b673691b15"
+                },
+                {
+                    "@id": "https://www.donneesquebec.ca/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/5e970115-19f7-4dc7-8a20-13252b4ac5a1"
+                },
+                {
+                    "@id": "https://www.donneesquebec.ca/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/15470019-62a0-4e05-8c65-7c5e35d7dc8d"
+                },
+                {
+                    "@id": "https://www.donneesquebec.ca/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/6de63859-2803-42f7-82a9-124dfe78eadf"
+                },
+                {
+                    "@id": "https://www.donneesquebec.ca/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/7cdb19ef-7151-484b-a6b7-509a14a4e612"
+                },
+                {
+                    "@id": "https://www.donneesquebec.ca/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/ada44698-f402-49aa-8524-26d224e61b49"
+                },
+                {
+                    "@id": "https://www.donneesquebec.ca/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/ef09c2d9-84a0-4be5-98f8-311b03164f20"
+                },
+                {
+                    "@id": "https://www.donneesquebec.ca/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/be702e5c-a25e-421e-b00d-0360c73525f1"
+                },
+                {
+                    "@id": "https://www.donneesquebec.ca/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/86cbda2c-3bb8-4efe-a397-17a33450618f"
+                }
+            ],
+            "schema:inLanguage": "FR",
+            "schema:includedInDataCatalog": {
+                "@id": "_:N8cbebc3bbb3a4af6b1c4ba07a08cec26"
+            },
+            "schema:keywords": [
+                "Accident de la route",
+                "HackQC17",
+                "Transport"
+            ],
+            "schema:license": "https://www.donneesquebec.ca/licence/#cc-by",
+            "schema:name": "Rapports d'accident",
+            "schema:publisher": {
+                "@id": "https://www.donneesquebec.ca/organization/d1a4202e-1ae1-4820-be07-0cca45a98e23"
+            },
+            "schema:url": "https://www.donneesquebec.ca/recherche/dataset/rapports-d-accident"
+        },
+        {
+            "@id": "_:N8cbebc3bbb3a4af6b1c4ba07a08cec26",
+            "@type": "schema:DataCatalog",
+            "schema:description": "Partenariat Donn\u00e9es Qu\u00e9bec",
+            "schema:name": "Donn\u00e9es Qu\u00e9bec",
+            "schema:url": "https://www.donneesquebec.ca"
+        },
+        {
+            "@id": "_:N5fff4b9212ea414aa74813a0133fa9b5",
+            "@type": "schema:Thing",
+            "schema:name": "transport",
+            "schema:url": "https://www.donneesquebec.ca/recherche/group/2be1c718-4fdc-425f-b09e-263be63735a2"
+        },
+        {
+            "@id": "https://www.donneesquebec.ca/organization/d1a4202e-1ae1-4820-be07-0cca45a98e23",
+            "@type": "schema:Organization",
+            "schema:contactPoint": [
+                {
+                    "@id": "_:N7e2d99daec9545ad8d6951eaa703c740"
+                },
+                {
+                    "@id": "_:N696a403845374eae8ba7493c76896365"
+                }
+            ],
+            "schema:name": "Soci\u00e9t\u00e9 de l'assurance automobile du Qu\u00e9bec (SAAQ)"
+        },
+        {
+            "@id": "_:N7e2d99daec9545ad8d6951eaa703c740",
+            "@type": "schema:ContactPoint",
+            "schema:contactType": "customer service",
+            "schema:email": "donnees.ouvertes@saaq.gouv.qc.ca",
+            "schema:name": "Direction de la recherche et du d\u00e9veloppement en s\u00e9curit\u00e9 routi\u00e8re",
+            "schema:url": "https://www.donneesquebec.ca"
+        },
+        {
+            "@id": "_:N696a403845374eae8ba7493c76896365",
+            "@type": "schema:ContactPoint",
+            "schema:contactType": "customer service",
+            "schema:email": "donnees.ouvertes@saaq.gouv.qc.ca",
+            "schema:name": "Direction de la recherche et du d\u00e9veloppement en s\u00e9curit\u00e9 routi\u00e8re",
+            "schema:url": "https://www.donneesquebec.ca"
+        },
+        {
+            "@id": "https://www.donneesquebec.ca/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/ef09c2d9-84a0-4be5-98f8-311b03164f20",
+            "@type": "schema:DataDownload",
+            "schema:contentSize": 43874328,
+            "schema:encodingFormat": "CSV",
+            "schema:name": "Rapports d'accident, 2014",
+            "schema:url": "https://dq-prd-bucket1.s3.ca-central-1.amazonaws.com/saaq/Rapport_Accident_2014.csv"
+        },
+        {
+            "@id": "https://www.donneesquebec.ca/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/6120b9e2-544c-445e-b773-94b673691b15",
+            "@type": "schema:DataDownload",
+            "schema:contentSize": 28671534,
+            "schema:encodingFormat": "CSV",
+            "schema:name": "Rapports d'accident, 2012",
+            "schema:url": "https://dq-prd-bucket1.s3.ca-central-1.amazonaws.com/saaq/Rapport_Accident_2012.csv"
+        },
+        {
+            "@id": "https://www.donneesquebec.ca/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/50356277-13a1-49ce-9513-86a53bd234fc",
+            "@type": "schema:DataDownload",
+            "schema:contentSize": 26967086,
+            "schema:encodingFormat": "CSV",
+            "schema:name": "Rapports d'accident, 2020",
+            "schema:url": "https://dq-prd-bucket1.s3.ca-central-1.amazonaws.com/saaq/Rapport_Accident_2020.csv"
+        },
+        {
+            "@id": "https://www.donneesquebec.ca/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/15470019-62a0-4e05-8c65-7c5e35d7dc8d",
+            "@type": "schema:DataDownload",
+            "schema:contentSize": 43602860,
+            "schema:encodingFormat": "CSV",
+            "schema:name": "Rapports d'accident, 2017",
+            "schema:url": "https://dq-prd-bucket1.s3.ca-central-1.amazonaws.com/saaq/Rapport_Accident_2017.csv"
+        },
+        {
+            "@id": "https://www.donneesquebec.ca/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/86cbda2c-3bb8-4efe-a397-17a33450618f",
+            "@type": "schema:DataDownload",
+            "schema:contentSize": 41304486,
+            "schema:encodingFormat": "CSV",
+            "schema:name": "Rapports d'accident, 2018",
+            "schema:url": "https://dq-prd-bucket1.s3.ca-central-1.amazonaws.com/saaq/Rapport_Accident_2018.csv"
+        },
+        {
+            "@id": "https://www.donneesquebec.ca/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/86cd3bcb-fe10-4ca5-992e-5bb80e5c534a",
+            "@type": "schema:DataDownload",
+            "schema:contentSize": 178302,
+            "schema:encodingFormat": "PDF",
+            "schema:name": "Documentation sur les variables",
+            "schema:url": "https://www.donneesquebec.ca/recherche/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/86cd3bcb-fe10-4ca5-992e-5bb80e5c534a/download/rapports-accident-documentation.pdf"
+        },
+        {
+            "@id": "https://www.donneesquebec.ca/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/5e970115-19f7-4dc7-8a20-13252b4ac5a1",
+            "@type": "schema:DataDownload",
+            "schema:contentSize": 43137017,
+            "schema:encodingFormat": "CSV",
+            "schema:name": "Rapports d'accident, 2015",
+            "schema:url": "https://dq-prd-bucket1.s3.ca-central-1.amazonaws.com/saaq/Rapport_Accident_2015.csv"
+        },
+        {
+            "@id": "https://www.donneesquebec.ca/dataset/8dd0ab9b-d45d-4526-9256-c598fbc4ff3a/resource/be702e5c-a25e-421e-b00d-0360c73525f1",
+            "@type": "schema:DataDownload",
+            "schema:encodingFormat": "CSV",
+            "schema:name": "Rapports d'accident, 2022",
+            "schema:url": "https://dq-prd-bucket1.s3.ca-central-1.amazonaws.com/saaq/Rapport_Accident_2022.csv"
+        }
+    ]
+}
+    </script>
+  
+
+    
+    
+    <script src="/recherche/webassets/vendor/240e5086_jquery.js" type="text/javascript"></script>
+<script src="/recherche/webassets/vendor/773d6354_vendor.js" type="text/javascript"></script>
+<script src="/recherche/webassets/vendor/6d1ad7e6_bootstrap.js" type="text/javascript"></script>
+<script src="/recherche/webassets/vendor/529a0eb7_htmx.js" type="text/javascript"></script>
+<script src="/recherche/webassets/base/a65ea3a0_main.js" type="text/javascript"></script>
+<script src="/recherche/webassets/dqc_scheming/69c01bde_dqc_scheming_js.js" type="text/javascript"></script>
+<script src="/recherche/webassets/base/b1def42f_ckan.js" type="text/javascript"></script>
+<script src="/recherche/webassets/dqc_theme/ef34731d_dqc_theme_js.js" type="text/javascript"></script>
+<script src="/recherche/webassets/tracking/8b59a308_tracking.js" type="text/javascript"></script>
+<script src="/recherche/webassets/activity/0fdb5ee0_activity.js" type="text/javascript"></script>
+  </body>
+</html>
