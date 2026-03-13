@@ -209,9 +209,9 @@ if not success or data_dict['final'].empty:
 df = data_dict['final']
 
 # ----- SIDEBAR NAVIGATION ----- #
-st.sidebar.image("https://upload.wikimedia.org/wikipedia/fr/thumb/9/99/SAAQ_logo.svg/3840px-SAAQ_logo.svg.png", width=180)
-st.sidebar.markdown("<p style='text-align: center; font-size: 0.9em; font-weight: 500; margin-top: -10px;'>CEIA2</p>", unsafe_allow_html=True)
-st.sidebar.markdown("<p style='text-align: center; font-size: 0.75em; color: gray; margin-top: -15px;'>Centre d'expertise en analytique et IA</p>", unsafe_allow_html=True)
+st.sidebar.image("https://upload.wikimedia.org/wikipedia/fr/thumb/9/99/SAAQ_logo.svg/3840px-SAAQ_logo.svg.png", width=120)
+st.sidebar.markdown("<h2 style='text-align: center; font-weight: 800; margin-top: -10px; color: #1E3A8A;'>CEI2A</h2>", unsafe_allow_html=True)
+st.sidebar.markdown("<p style='text-align: center; font-size: 0.8em; color: gray; margin-top: -20px; font-weight: 500;'>Centre d'expertise en analytique et IA</p>", unsafe_allow_html=True)
 st.sidebar.markdown("---")
 st.sidebar.title("📊 Actuariat & IA")
 st.sidebar.markdown("---")
