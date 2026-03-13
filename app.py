@@ -37,7 +37,7 @@ def load_and_clean_data(directory_path="Données"):
         return pd.DataFrame(), False
         
     # Charger les dossiers d'indemnisation
-    filepaths_indem = [os.path.join(directory_path, f) for f in os.listdir(directory_path) if f.endswith('.csv') and not os.path.isdir(os.path.join(directory_path, f))]
+    filepaths_indem = [os.path.join(directory_path, f) for f in sorted(os.listdir(directory_path)) if f.endswith('.csv') and not os.path.isdir(os.path.join(directory_path, f))]
     
     for f in filepaths_indem:
         try:
@@ -68,7 +68,7 @@ def load_and_clean_data(directory_path="Données"):
     acc_dir = os.path.join(directory_path, "Accidents")
     if os.path.exists(acc_dir):
         dfs_acc = []
-        for f in os.listdir(acc_dir):
+        for f in sorted(os.listdir(acc_dir)):
             if f.endswith('.csv'):
                 try:
                     df_acc = pd.read_csv(os.path.join(acc_dir, f), low_memory=False, on_bad_lines='skip')
@@ -97,7 +97,7 @@ def load_and_clean_data(directory_path="Données"):
     bless_dir = os.path.join(directory_path, "Blessures indemnisations ")
     if os.path.exists(bless_dir):
         dfs_bless = []
-        for f in os.listdir(bless_dir):
+        for f in sorted(os.listdir(bless_dir)):
             if f.endswith('.csv'):
                 try:
                     df_bless = pd.read_csv(os.path.join(bless_dir, f), low_memory=False)
