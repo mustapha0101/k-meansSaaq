@@ -883,14 +883,17 @@ elif page == "4. IA Appliquée (Données Réelles)":
                                 
                             # ----- INTERPRÉTATION ACTUARIELLE EXPERTE -----
                             st.markdown("💡 *Signification Actuarielle :*")
-                            if "Lourd" in trait_name:
+                            trait_name_lower = trait_name.lower()
+                            if "lourd" in trait_name_lower:
                                 st.error("L'implication d'un poids lourd décuple la force d'impact cinétique. Provisionnement pour dommages corporels (invalidité à long terme) à réévaluer à la hausse.")
-                            elif "Vélo" in trait_name or "Piéton" in trait_name:
+                            elif "vélo" in trait_name_lower or "piéton" in trait_name_lower:
                                 st.warning("Usager vulnérable. Risque de poly-traumatismes élevé avec coûts médicaux récurrents. Stratégie de prévention ciblée recommandée.")
-                            elif "Entorse" in trait_name or "cervicale" in trait_name:
+                            elif "entorse" in trait_name_lower or "cervicale" in trait_name_lower:
                                 st.success("Volumétrie élevée mais dommages souvent limités aux tissus mous (coup de fouet). Coût par dossier modéré, mais fréquence à surveiller.")
-                            elif "Fractures" in trait_name:
+                            elif "fracture" in trait_name_lower:
                                 st.warning("Lésions structurelles nécessitant un suivi orthopédique et une réhabilitation. Impose une charge financière à moyen terme sur la sécurité routière.")
+                            elif any(mot in trait_name_lower for mot in ["crânien", "décès", "amputation", "moelle", "traumatisme", "brûlure"]):
+                                st.error("Vecteur de risque catastrophique (blessure majeure/invalidité potentielle). Impact financier sévère sur l'indemnisation de remplacement de revenu et les soins longue durée. Provisionnement maximal requis.")
                             else:
                                 st.info("Profil standard de collision, coûts alignés sur la mutualisation classique du risque auto.")
                                 
