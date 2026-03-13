@@ -964,7 +964,7 @@ elif page == "5. Espace Décisionnel Actuaire":
                         
                         # Explication claire en texte complet
                         direction = "plus" if deviation > 0 else "moins"
-                        st.write(f"*(Ce profil subit statistiquement **{abs(deviation):.1f}%** de blessures en {direction} par accident par rapport à la moyenne globale pondérée de tout votre portefeuille SAAQ).*")
+                        st.write(f"*(Ce profil subit statistiquement **{abs(deviation):.1f}%** de blessures en {direction} par accident par rapport à la moyenne globale pondérée de tout le portefeuille SAAQ).*")
                             
                     with col_r3:
                         if deviation > 5.0:
