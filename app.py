@@ -1009,20 +1009,23 @@ elif page == "5. Espace Décisionnel Actuaire":
                             trait_name = translate_trait(p['traits'][0][0], p['traits'][0][1])
                             st.write(f"**Vecteur de risque :** {trait_name}")
                             
-                    with col_r2:
-                        impact_color = "inverse" if indice_severite > 1.05 else "normal"
+                    with col_r2: 
+                        traits = [translate_trait(t[0], t[1]) for t in p['traits']]
+                        mots_graves = ["lourd", "piéton", "vélo", "crânien", "fracture", "amputation", "décès", "traumatisme", "moelle", "brûlure"]
+                        est_grave = any(mot in str(t).lower() for t in traits for mot in mots_graves)
+                        
+                        impact_color = "inverse" if (indice_severite > 1.05 or est_grave) else "normal"
                         sign = "+" if indice_severite > 1 else ""
                         st.metric(f"Indice de Sévérité Relative", f"x{indice_severite:.2f}", f"{volume_dossiers:,} dossiers historiques", delta_color=impact_color)
                         
                         # Explication claire en texte complet
                         direction = "plus" if deviation > 0 else "moins"
-                        st.write(f"*(Ce profil subit statistiquement **{abs(deviation):.1f}%** de blessures en {direction} par accident par rapport à la moyenne globale pondérée de tout le portefeuille SAAQ).*")
+                        if est_grave and deviation <= 0:
+                            st.write(f"*(Bien que comptant moins de blessures brutes ({abs(deviation):.1f}% en moins), ce profil présente un risque de blessure grave à coût unitaire extrême).*")
+                        else:
+                            st.write(f"*(Ce profil subit statistiquement **{abs(deviation):.1f}%** de blessures en {direction} par accident par rapport à la moyenne globale pondérée de tout le portefeuille SAAQ).*")
                             
                     with col_r3:
-                        traits = [translate_trait(t[0], t[1]) for t in p['traits']]
-                        mots_graves = ["lourd", "piéton", "vélo", "crânien", "fracture", "amputation", "décès", "traumatisme", "moelle", "brûlure"]
-                        est_grave = any(mot in str(t).lower() for t in traits for mot in mots_graves)
-
                         if deviation > 5.0 or est_grave:
                             st.error(f"📈 **Action : Provisionnement IBNR (Incurred But Not Reported) à la Hausse**")
                             if est_grave:
