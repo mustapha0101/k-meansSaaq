@@ -199,8 +199,57 @@ def translate_trait(col, val):
 
 # ----------------- MAIN APP ----------------- #
 
-with st.spinner("Chargement et nettoyage des données en cours..."):
-    data_dict, success = load_and_clean_data()
+loader_placeholder = st.empty()
+with loader_placeholder.container():
+    st.markdown("""
+    <style>
+    .loader-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+    }
+    .spinner {
+        width: 60px;
+        height: 60px;
+        border: 6px solid #f3f3f3;
+        border-top: 6px solid #1E3A8A; /* Bleu foncé CEI2A */
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin-bottom: 20px;
+    }
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    .loader-title {
+        color: #1E3A8A;
+        font-family: 'Helvetica Neue', sans-serif;
+        font-weight: 800;
+        font-size: 2em;
+        margin: 0;
+        animation: pulse 1.5s ease-in-out infinite;
+    }
+    @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+    }
+    .loader-subtitle {
+        color: #666;
+        font-size: 1.1em;
+        margin-top: 10px;
+    }
+    </style>
+    <div class="loader-container">
+        <div class="spinner"></div>
+        <h2 class="loader-title">CEI2A</h2>
+        <p class="loader-subtitle">Chargement, nettoyage et fusion des données SAAQ en cours...</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+data_dict, success = load_and_clean_data()
+loader_placeholder.empty()
 
 if not success or data_dict['final'].empty:
     st.error("⚠️ Impossible de charger les données. Veuillez vérifier le dossier 'Données'.")
