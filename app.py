@@ -1134,18 +1134,22 @@ elif page == "5. Espace Décisionnel Actuaire":
                     if traits_clean:
                         st.write(f"*{traits_clean[0]}*")
                     
+                    # Définition des mots-clés de gravité extrême
+                    mots_graves = ["lourd", "piéton", "vélo", "crânien", "fracture", "amputation", "décès", "traumatisme", "moelle", "brûlure"]
+                    est_grave = any(mot in str(t).lower() for t in traits for mot in mots_graves)
+                    
                     # Règle d'assignation explicite
-                    if deviation < -2.0 and not any("Lourd" in str(t) or "piéton" in str(t).lower() or "vélo" in str(t).lower() for t in traits):
+                    if deviation < -2.0 and not est_grave:
                         st.success("Triage recommandé : **Paiement Automatique (Fast-Track)**")
                         st.caption(f"Logique : Indice ({indice_severite:.2f}) < 0.98 et aucun facteur aggravant détecté. Autorisation de règlement sans intervention humaine.")
-                    elif deviation > 5.0 or any("Lourd" in str(t) or "piéton" in str(t).lower() for t in traits):
+                    elif deviation > 5.0 or est_grave:
                         st.error("Triage recommandé : **Expert Médical Senior**")
                         
                         # Explication précise de la règle déclenchée
                         if deviation > 5.0:
                             reason = f"Indice de Sévérité ({indice_severite:.2f}) > 1.05"
                         else:
-                            reason = "Vecteur de risque catastrophique (Lourd/Vulnérable) détecté"
+                            reason = "Vecteur de risque catastrophique (Lourd/Vulnérable/Blessure Majeure) détecté"
                             
                         st.caption(f"Logique : {reason}. Assignation prioritaire à l'escouade spécialisée en blessures complexes.")
                     else:
