@@ -361,7 +361,7 @@ if page == "0. Présentation SAAQ & IA":
     L'application de cette IA sur les données de la SAAQ permet trois avancées majeures prêtes pour l'industrie :
     
     1.  🎯 **Tarification (Pricing) Millimétrique** : Fin de la mutualisation aveugle. On surcharge (Malus) chirurgicalement les profils hyper-risqués détectés par l'IA (ex: Camions lourds en zone urbaine) et on offre des rabais justifiés aux bons profils.
-    2.  🏦 **Provisionnement (IBNR) Précis** : Calcul dynamique d'un "Indice de Sévérité Relative". La direction sait exactement de combien augmenter ses réserves selon la distribution en temps réel de son portefeuille.
+    2.  🏦 **Provisionnement (IBNR - Incurred But Not Reported) Précis** : Calcul dynamique d'un "Indice de Sévérité Relative". La direction sait exactement de combien augmenter ses réserves selon la distribution en temps réel de son portefeuille.
     3.  ⚡ **Triage Automatisé** : Dès l'ouverture du dossier (First Notice of Loss), l'IA prédit la gravité et route le dossier (Règlement Fast-Track immédiat vs Expert Senior pour blessure grave), réduisant massivement les frais de gestion opérationnelle (ALAE).
     
     👈 **Utilisez le menu de gauche pour naviguer à travers les différentes étapes de cette expérimentation.**
@@ -1017,14 +1017,14 @@ elif page == "5. Espace Décisionnel Actuaire":
                             
                     with col_r3:
                         if deviation > 5.0:
-                            st.error(f"📈 **Action : Provisionnement IBNR à la Hausse**")
+                            st.error(f"📈 **Action : Provisionnement IBNR (Incurred But Not Reported) à la Hausse**")
                             st.write(f"Ce cluster génère structurellement {deviation:.1f}% de blessures en plus par accident. Les durées de réhabilitation (et de paiement des indemnités de remplacement de revenu) seront statistiquement allongées.")
                         elif deviation < -5.0:
                             st.success(f"📉 **Action : Provisionnement Allégé**")
                             st.write(f"Ce cluster est moins sévère que la mutualisation (-{abs(deviation):.1f}%). Les dossiers se refermeront beaucoup plus vite que la moyenne.")
                         else:
                             st.info(f"⚖️ **Action : Provisionnement Standard**")
-                            st.write(f"La sévérité est parfaitement alignée sur la moyenne historique. Aucun ajustement IBNR algorithmique requis pour ce segment.")
+                            st.write(f"La sévérité est parfaitement alignée sur la moyenne historique. Aucun ajustement IBNR (Incurred But Not Reported) algorithmique requis pour ce segment.")
                     
                     with st.expander(f"📊 Données Probantes de l'IA (Provenance du Risque) - Profil {p['rank']}"):
                         fig_col1, fig_col2 = st.columns(2)
@@ -1165,7 +1165,7 @@ elif page == "5. Espace Décisionnel Actuaire":
                 
                 st.write(f"Le clustering montre que **{pct_severe:.1f}%** des sinistres ({volume_severe:,} cas annuels historiques) concentrent une sévérité anormalement élevée (queue de distribution épaisse).")
                 st.write(f"**Indice de Pression sur le Portefeuille :** x{indice_severe:.2f} fois la sévérité normale.")
-                st.error("Recommandation : Ajustement des réserves provisionnées à long terme (IBNR) et révision ciblée des contributions d'assurance pour ce profil spécifique afin de limiter le déficit du fonds soutenu par les Québécois.")
+                st.error("Recommandation : Ajustement des réserves provisionnées à long terme (IBNR - Incurred But Not Reported) et révision ciblée des contributions d'assurance pour ce profil spécifique afin de limiter le déficit du fonds soutenu par les Québécois.")
             
             vulnerable_profiles = [p for p in profiles if any("Vélo" in str(translate_trait(t[0], t[1])) or "Moto" in str(translate_trait(t[0], t[1])) for t in p['traits'])]
             if vulnerable_profiles:
