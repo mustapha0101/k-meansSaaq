@@ -1016,9 +1016,17 @@ elif page == "5. Espace Décisionnel Actuaire":
                         st.write(f"*(Ce profil subit statistiquement **{abs(deviation):.1f}%** de blessures en {direction} par accident par rapport à la moyenne globale pondérée de tout le portefeuille SAAQ).*")
                             
                     with col_r3:
-                        if deviation > 5.0:
+                        traits = [translate_trait(t[0], t[1]) for t in p['traits']]
+                        mots_graves = ["lourd", "piéton", "vélo", "crânien", "fracture", "amputation", "décès", "traumatisme", "moelle", "brûlure"]
+                        est_grave = any(mot in str(t).lower() for t in traits for mot in mots_graves)
+
+                        if deviation > 5.0 or est_grave:
                             st.error(f"📈 **Action : Provisionnement IBNR (Incurred But Not Reported) à la Hausse**")
-                            st.write(f"Ce cluster génère structurellement {deviation:.1f}% de blessures en plus par accident. Les durées de réhabilitation (et de paiement des indemnités de remplacement de revenu) seront statistiquement allongées.")
+                            if est_grave:
+                                reason_prov = "Ce profil contient un vecteur de risque médical catastrophique (blessures graves/invalidité potentielle)."
+                            else:
+                                reason_prov = f"Ce cluster génère structurellement {deviation:.1f}% de blessures en plus par accident."
+                            st.write(f"{reason_prov} Les durées de réhabilitation (et de paiement des indemnités de remplacement de revenu) seront statistiquement allongées.")
                         elif deviation < -5.0:
                             st.success(f"📉 **Action : Provisionnement Allégé**")
                             st.write(f"Ce cluster est moins sévère que la mutualisation (-{abs(deviation):.1f}%). Les dossiers se refermeront beaucoup plus vite que la moyenne.")
