@@ -1078,18 +1078,28 @@ elif page == "5. Espace Décisionnel Actuaire":
                         st.metric(f"Profil {p['rank']} ({p['size_pct']:.1f}% base)", f"{p['avg_bless']:.1f} bless/dossier", f"{deviation:+.1f}% Sévérité", delta_color="inverse")
                     
                     with col_p2:
-                        color = "inverse" if indice_severite > 1.05 else "normal"
+                        traits = [translate_trait(t[0], t[1]) for t in p['traits']]
+                        mots_graves = ["lourd", "piéton", "vélo", "crânien", "fracture", "amputation", "décès", "traumatisme", "moelle", "brûlure"]
+                        est_grave = any(mot in str(t).lower() for t in traits for mot in mots_graves)
+                        
+                        color = "inverse" if (indice_severite > 1.05 or est_grave) else "normal"
                         sign = "+" if indice_severite > 1.0 else ""
                         st.metric("Multiplicateur de Prime Statistique", f"x{indice_severite:.2f}", f"Indice de charge de sinistre", delta_color=color)
                         
                     with col_p3:
-                        if indice_severite > 1.2:
+                        if indice_severite > 1.2 or (est_grave and indice_severite > 1.0):
                             st.error(f"⚠️ **Surtaxe Technique Requise**")
-                            st.write(f"L'IA recommande d'imposer un malus de fréquence tarifaire de **+{deviation:.1f}%** pour équilibrer le rapport sinistre/prime sur ce segment à haut risque médical.")
-                        elif indice_severite > 1.05:
+                            if est_grave:
+                                st.write("L'IA recommande d'imposer un malus tarifaire en raison de la présence d'un risque de blessure catastrophique systématique dans ce profil.")
+                            else:
+                                st.write(f"L'IA recommande d'imposer un malus de fréquence tarifaire de **+{deviation:.1f}%** pour équilibrer le rapport sinistre/prime sur ce segment à haut risque médical.")
+                        elif indice_severite > 1.05 or est_grave:
                             st.warning(f"📈 **Ajustement à la Hausse**")
-                            st.write(f"Majoration modérée recommandée pour compenser un taux de blessure systématiquement supérieur à la mutualisation globale.")
-                        elif indice_severite < 0.9:
+                            if est_grave:
+                                st.write("Majoration recommandée pour compenser un risque de blessure grave, indépendamment de la fréquence globale brute.")
+                            else:
+                                st.write(f"Majoration modérée recommandée pour compenser un taux de blessure systématiquement supérieur à la mutualisation globale.")
+                        elif indice_severite < 0.9 and not est_grave:
                             st.success(f"📉 **Rabais de Bonne Expérience**")
                             st.write(f"Ce segment présente une fréquence grave très faible. Un algorithme de tarification compétitive peut accorder jusqu'à **{abs(deviation):.1f}%** d'escompte.")
                         else:
